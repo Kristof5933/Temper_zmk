@@ -104,6 +104,15 @@
             hold-trigger-key-positions = <10 12 20 21 16 17 19 6>;
             hold-trigger-on-release;
         };
+
+        comma_dot: comma_dot {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_DOT";
+            bindings = <&kp LS(COMMA)>, <&kp DOT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -262,16 +271,25 @@
         };
     };
 
+    macros {
+        a_circ: a_circ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp A>;
+            label = "A_CIRC";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         base {
             display-name = "Base";
             bindings = <
-  &kp A            &kp C           &kp O               &kp P            &kp Z                       &kp J      &kp SEMICOLON  &kp D                &sl 1            &kp Y
-  &hml LEFT_GUI Q  &hm LEFT_ALT R  &hm LEFT_CONTROL E  &kp N            &kp F                       &kp L      &kp R          &hm RIGHT_CONTROL T  &hm RIGHT_ALT I  &hmr RIGHT_GUI U
-  &kp W            &kp X           &kp NUMBER_6        &kp V            &kp B                       &kp COMMA  &kp H          &kp G                &kp COMMA        &kp K
-                                   &lt 5 ESCAPE        &lt 5 BACKSPACE  &space_alt RIGHT_ALT TAB    &kp ENTER  &lt 3 SPACE    &lt 4 DEL
+  &kp A            &kp C           &kp O               &kp P            &kp Z             &kp J       &kp SEMICOLON  &kp D                &sl 1            &kp Y
+  &hml LEFT_GUI Q  &hm LEFT_ALT S  &hm LEFT_CONTROL E  &kp N            &kp F             &kp L       &kp R          &hm RIGHT_CONTROL T  &hm RIGHT_ALT I  &hmr RIGHT_GUI U
+  &kp W            &kp X           &kp NUMBER_6        &kp V            &kp B             &comma_dot  &kp H          &kp G                &kp M            &kp K
+                                   &lt 5 ESCAPE        &lt 5 BACKSPACE  &kp LEFT_SHIFT    &kp ENTER   &lt 3 SPACE    &lt 4 DEL
             >;
         };
 
@@ -287,7 +305,7 @@
 
         navi_right {
             bindings = <
-  &trans     &trans     &trans     &trans        &trans       &kp CARET       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+  &a_circ    &trans     &trans     &trans        &trans       &kp CARET       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
   &trans     &trans     &trans     &kp LEFT_ALT  &trans       &msc SCRL_UP    &kp LEFT       &kp UP_ARROW  &kp DOWN_ARROW        &kp RIGHT
   &kp LC(Z)  &kp LC(Y)  &kp LC(X)  &kp LC(C)     &kp LC(V)    &msc SCRL_DOWN  &kp HOME       &kp PAGE_UP   &kp PAGE_DOWN         &kp END
                         &trans     &trans        &trans       &kp UNDERSCORE  &trans         &trans
@@ -336,6 +354,16 @@
   &trans  &trans  &trans  &trans  &trans    &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
   &trans  &trans  &trans  &trans  &trans    &msc SCRL_DOWN  &trans          &trans        &trans          &trans
                   &trans  &trans  &trans    &mkp LCLK       &mkp MCLK       &mkp RCLK
+            >;
+        };
+
+        Shift {
+            display-name = "Base";
+            bindings = <
+  &kp A            &kp C           &kp O               &kp P            &kp Z                       &kp J      &kp SEMICOLON  &kp D                &sl 1            &kp Y
+  &hml LEFT_GUI Q  &hm LEFT_ALT S  &hm LEFT_CONTROL E  &kp N            &kp F                       &kp L      &kp R          &hm RIGHT_CONTROL T  &hm RIGHT_ALT I  &hmr RIGHT_GUI U
+  &kp W            &kp X           &kp NUMBER_6        &kp V            &kp B                       &kp COMMA  &kp H          &kp G                &kp M            &kp K
+                                   &lt 5 ESCAPE        &lt 5 BACKSPACE  &space_alt RIGHT_ALT TAB    &kp ENTER  &lt 3 SPACE    &lt 4 DEL
             >;
         };
     };
