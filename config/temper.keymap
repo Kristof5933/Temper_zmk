@@ -411,7 +411,7 @@
         Accents {
             bindings = <
   &a_circ             &kp N9        &oe_ligature_linux  &o_circ  &trans    &trans      &trans     &kp N8   &trans       &trans
-  &kp N0              &kp NUMBER_2  &kp N7              &e_circ  &trans    &kp RS(N5)  &kp MINUS  &i_circ  &i_diaresis  &kp SEMICOLON
+  &kp N0              &kp NUMBER_2  &kp N7              &e_circ  &trans    &kp RS(N5)  &kp MINUS  &i_circ  &i_diaresis  &kp SINGLE_QUOTE
   &ae_ligature_linux  &trans        &trans              &trans   &trans    &trans      &trans     &trans   &trans       &trans
                                     &trans              &trans   &trans    &trans      &trans     &trans
             >;
