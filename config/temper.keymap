@@ -287,6 +287,48 @@
             bindings = <&kp LEFT_BRACKET &kp A>;
             label = "A_CIRC";
         };
+
+        oe_ligature_linux: oe_ligature_linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N5 &kp N3 &kp ENTER>;
+            label = "OE_LIGATURE_LINUX";
+        };
+
+        o_circ: o_circ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp O>;
+            label = "O_CIRC";
+        };
+
+        e_circ: e_circ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp E>;
+            label = "E_CIRC";
+        };
+
+        ae_ligature_linux: ae_ligature {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp E &kp N6 &kp RET>;
+            label = "AE_LIGATURE";
+        };
+
+        i_circ: i_circ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp I>;
+            label = "I_CIRC";
+        };
+
+        i_diaresis: i_diaresis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LEFT_BRACKET) &kp I>;
+            label = "I_DIARESIS";
+        };
     };
 
     keymap {
@@ -295,7 +337,7 @@
         base {
             display-name = "Base";
             bindings = <
-  &kp A            &kp C           &kp O               &kp P            &kp Z             &kp J       &kp SEMICOLON  &kp D                &sl 2             &kp Y
+  &kp A            &kp C           &kp O               &kp P            &kp Z             &kp J       &kp SEMICOLON  &kp D                &sl 8             &kp Y
   &hml LEFT_GUI Q  &hm LEFT_ALT S  &hm LEFT_CONTROL E  &kp N            &kp F             &kp L       &kp R          &hm RIGHT_CONTROL T  &hm RIGHT_ALT I   &hmr RIGHT_GUI U
   &kp W            &kp X           &kp NUMBER_6        &kp V            &kp B             &dot_colon  &kp H          &kp G                &comma_semicolon  &kp K
                                    &lt 1 ESCAPE        &lt 1 BACKSPACE  &kp LEFT_SHIFT    &kp ENTER   &lt 4 SPACE    &lt 5 DEL
@@ -366,12 +408,12 @@
             >;
         };
 
-        layer_8 {
+        Accents {
             bindings = <
-  &a_circ  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                   &trans  &trans  &trans    &trans  &trans  &trans
+  &a_circ             &kp N9        &oe_ligature_linux  &o_circ  &trans    &trans      &trans     &kp N8   &trans       &trans
+  &kp N0              &kp NUMBER_2  &kp N7              &e_circ  &trans    &kp RS(N5)  &kp MINUS  &i_circ  &i_diaresis  &kp SEMICOLON
+  &ae_ligature_linux  &trans        &trans              &trans   &trans    &trans      &trans     &trans   &trans       &trans
+                                    &trans              &trans   &trans    &trans      &trans     &trans
             >;
         };
     };
