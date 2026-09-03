@@ -122,6 +122,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        o_circ_minmaj: o_circ_minmaj {
+            compatible = "zmk,behavior-mod-morph";
+            label = "O_CIRC_MINMAJ";
+            bindings = <&o_circ>, <&o_circ_maj>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -329,6 +338,20 @@
             bindings = <&kp LS(LEFT_BRACKET) &kp I>;
             label = "I_DIARESIS";
         };
+
+        u_circ: u_circ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp U>;
+            label = "U_CIRC";
+        };
+
+        o_circ_maj: o_circ_maj {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp LS(O)>;
+            label = "O_CIRC_MAJ";
+        };
     };
 
     keymap {
@@ -410,10 +433,10 @@
 
         Accents {
             bindings = <
-  &a_circ             &kp N9        &oe_ligature_linux  &o_circ  &trans    &trans      &trans     &kp N8   &trans       &trans
-  &kp N0              &kp NUMBER_2  &kp N7              &e_circ  &trans    &kp RS(N5)  &kp MINUS  &i_circ  &i_diaresis  &kp SINGLE_QUOTE
-  &ae_ligature_linux  &trans        &trans              &trans   &trans    &trans      &trans     &trans   &trans       &trans
-                                    &trans              &trans   &trans    &trans      &trans     &trans
+  &a_circ             &kp N9        &oe_ligature_linux  &o_circ_minmaj  &none     &none       &none      &kp N8   &none        &u_circ
+  &kp N0              &kp NUMBER_2  &kp N7              &e_circ         &none     &kp RS(N5)  &kp MINUS  &i_circ  &i_diaresis  &kp SINGLE_QUOTE
+  &ae_ligature_linux  &none         &none               &none           &none     &none       &none      &none    &none        &none
+                                    &trans              &trans          &trans    &trans      &trans     &trans
             >;
         };
     };
