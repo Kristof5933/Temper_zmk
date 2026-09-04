@@ -1,44 +1,192 @@
 layout: {zmk_keyboard: temper}
 layers:
   Base:
-  - Q
-  - W
-  - F
-  - P
-  - B
-  - J
-  - L
-  - U
-  - Y
-  - ''''
-  - {t: A, h: Shift}
-  - {t: R, h: Win}
-  - {t: S, h: LEFT CONTROL}
-  - {t: T, h: AltGr}
-  - G
-  - K
-  - {t: N, h: AltGr}
-  - {t: E, h: RIGHT CONTROL}
-  - {t: I, h: Win}
-  - {t: O, h: Shift}
-  - Z
-  - X
+  - A
   - C
+  - O
+  - P
+  - Z
+  - J
+  - ;
   - D
+  - {t: Accents, h: sticky}
+  - Y
+  - {t: Q, h: Win}
+  - {t: S, h: Alt}
+  - {t: E, h: LEFT CONTROL}
+  - N
+  - F
+  - L
+  - R
+  - {t: T, h: RIGHT CONTROL}
+  - {t: I, h: AltGr}
+  - {t: U, h: Win}
+  - W
+  - X
+  - '6'
   - V
-  - M
+  - B
+  - {t: 'Sft+,', s: .}
   - H
+  - G
+  - {t: M, s: ','}
+  - K
+  - {t: ESCAPE, h: Num}
+  - {t: ⌫, h: Num}
+  - Shift
+  - ⏎
+  - {t: ␣, h: Nav}
+  - {t: ⌦, h: AltGr}
+  Accents:
+  - '&a_circ'
+  - '9'
+  - '&oe_ligature_linux'
+  - {t: '&o_circ', s: '&o_circ_maj'}
+  - ''
+  - ''
+  - ''
+  - '8'
+  - {type: held}
+  - '&u_circ'
+  - '0'
+  - '2'
+  - '7'
+  - '&e_circ'
+  - ''
+  - Sft+5
+  - '-'
+  - '&i_circ'
+  - '&i_diaresis'
+  - ''''
+  - '&ae_ligature_linux'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  Nav:
+  - Boot
+  - ''
+  - ''
+  - ''
+  - '&studio_unlock'
+  - Insert
+  - Home
+  - UP ARROW
+  - PAGE UP
+  - Boot
+  - ''
+  - Alt
+  - Ctrl
+  - Shift
+  - ''
+  - Scroll ↑
+  - ←
+  - ↓
+  - →
+  - ''
+  - Undo
+  - Redo
+  - Cut
+  - Copy
+  - Paste
+  - Scroll ↓
+  - End
+  - ''
+  - PAGE DOWN
+  - CAPSLOCK
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  AltGr:
+  - '{'
+  - \
+  - Sft+\
+  - '}'
+  - Sft+'
+  - AltGr+0
+  - '1'
+  - '*'
+  - '4'
+  - AltGr+7
+  - AltGr+4
+  - '5'
+  - _
+  - AltGr+=
+  - '='
+  - AltGr+8
+  - ➕
+  - '-'
+  - ➗
+  - '3'
+  - AltGr+2
+  - AltGr+5
+  - AltGr+-
+  - '8'
+  - AltGr+3
+  - AltGr+6
+  - /
   - ','
   - .
-  - {t: /, h: \}
-  - {t: ⏎, h: NUMERICAL}
-  - {t: ↹, h: navi_right}
-  - {t: ⌫, h: AltGr}
-  - ␣
-  - {t: ⏎, h: navi_left}
-  - {t: ⌦, h: F1_F12}
+  - Sft+M
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  Num:
+  - Boot
+  - ''
+  - ''
+  - ''
+  - '&studio_unlock'
+  - ✖️
+  - Sft+7
+  - Sft+8
+  - Sft+9
+  - Boot
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ➗
+  - Sft+4
+  - Sft+5
+  - Sft+6
+  - ➗
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+KP SUBTRACT
+  - Sft+1
+  - Sft+2
+  - Sft+3
+  - ','
+  - {type: held}
+  - ''
+  - ''
+  - ➕
+  - Sft+0
+  - '='
   BLT:
-  - {t: ▽, type: trans}
+  - Boot
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -73,80 +221,6 @@ layers:
   - {type: held}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  navi_right:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Alt
-  - {t: ▽, type: trans}
-  - Scroll ↑
-  - ←
-  - UP ARROW
-  - DOWN ARROW
-  - →
-  - Undo
-  - Redo
-  - Cut
-  - Copy
-  - Paste
-  - Scroll ↓
-  - Home
-  - PAGE UP
-  - PAGE DOWN
-  - End
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - _
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  navi_left:
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - VOLUME UP
-  - {t: ▽, type: trans}
-  - '{'
-  - '['
-  - (
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ⏮
-  - ⏯
-  - ⏭
-  - MUTE
-  - {t: ▽, type: trans}
-  - '}'
-  - ']'
-  - )
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Vol Down
-  - {t: ▽, type: trans}
-  - '|'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
   F1_F12:
   - F1
@@ -184,44 +258,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  NUMERICAL:
-  - Calc
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - +
-  - '7'
-  - '8'
-  - '9'
-  - '-'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '*'
-  - '4'
-  - '5'
-  - '6'
-  - {t: /, h: ➗}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - .
-  - '1'
-  - '2'
-  - '3'
-  - ','
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '0'
-  - {t: ▽, type: trans}
-  - '='
   focus_switch:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -355,13 +392,13 @@ combos:
   l: [focus_switch]
 - p: [16, 17, 18]
   k: '='
-  l: [NUMERICAL]
+  l: [Num]
 - p: [16, 17]
   k: (
-  l: [NUMERICAL]
+  l: [Num]
 - p: [18, 19]
   k: )
-  l: [NUMERICAL]
+  l: [Num]
 - p: [20, 23]
   k: ⌦
 - p: [14, 15]
