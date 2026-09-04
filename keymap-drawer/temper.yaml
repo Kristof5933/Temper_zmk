@@ -31,10 +31,10 @@ layers:
   - G
   - {t: M, s: ','}
   - K
-  - {t: ESCAPE, h: Num}
+  - {t: ESCAPE, h: BLT}
   - {t: ⌫, h: Num}
-  - Shift
-  - ⏎
+  - {t: ↹, h: Shift}
+  - {t: ⏎, h: Funct}
   - {t: ␣, h: Nav}
   - {t: ⌦, h: AltGr}
   Accents:
@@ -179,8 +179,8 @@ layers:
   - Sft+2
   - Sft+3
   - ','
-  - {type: held}
   - ''
+  - {type: held}
   - ''
   - ➕
   - Sft+0
@@ -216,37 +216,37 @@ layers:
   - BT 3
   - BT 4
   - BT 5
-  - ''
-  - ''
   - {type: held}
-  - {t: ⏯, type: held}
+  - ''
+  - ''
+  - ⏯
   - PAUSE
   - MUTE
-  F1_F12:
+  Funct:
+  - F12
+  - F7
+  - F8
+  - F9
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F11
+  - F4
+  - F5
+  - F6
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F10
   - F1
   - F2
   - F3
-  - F4
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F5
-  - F6
-  - F7
-  - F8
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F9
-  - F10
-  - F11
-  - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -256,7 +256,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   focus_switch:
