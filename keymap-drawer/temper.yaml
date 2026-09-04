@@ -72,7 +72,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - '4'
   - ''
   Nav:
   - Boot
@@ -85,7 +85,7 @@ layers:
   - UP ARROW
   - PAGE UP
   - Boot
-  - ''
+  - Win
   - Alt
   - Ctrl
   - Shift
@@ -187,41 +187,41 @@ layers:
   - '='
   BLT:
   - Boot
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BT CLR
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - PREVIOUS
+  - Vol Down
+  - VOLUME UP
+  - ⏭
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - BT 1
   - BT 2
   - BT 3
   - BT 4
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Tog Mic
-  - Vol Up
-  - Vol Down
-  - {t: ▽, type: trans}
   - BT 5
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - {type: held}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: ⏯, type: held}
+  - PAUSE
+  - MUTE
   F1_F12:
   - F1
   - F2
