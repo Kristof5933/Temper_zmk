@@ -1,6 +1,6 @@
 file_format: "1"
 id: temper
-name: Chocofi Temper
+name: Kristof Temper
 type: shield
 url: https://github.com/Sifan6688/Temper_zmk
 requires: [pro_micro]
