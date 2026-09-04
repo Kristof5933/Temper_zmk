@@ -212,63 +212,63 @@
         };
 
         bluetooth {
-            bindings = <&mo 2>;
+            bindings = <&mo 4>;
             key-positions = <32 33>;
         };
 
         win_nav_left {
             bindings = <&kp LG(LEFT)>;
             key-positions = <16 17>;
-            layers = <6>;
+            layers = <7>;
         };
 
         win_nav_right {
             bindings = <&kp LG(RIGHT)>;
             key-positions = <19 18>;
-            layers = <6>;
+            layers = <7>;
         };
 
         win_nav_up {
             bindings = <&kp LG(UP_ARROW)>;
             key-positions = <7 8>;
-            layers = <6>;
+            layers = <7>;
         };
 
         win_nav_down {
             bindings = <&kp LG(DOWN_ARROW)>;
             key-positions = <17 18>;
-            layers = <6>;
+            layers = <7>;
         };
 
         win_nav_left_shift {
             bindings = <&kp LG(LS(LEFT))>;
             key-positions = <16 17 18>;
-            layers = <6>;
+            layers = <7>;
         };
 
         win_nav_right_shift {
             bindings = <&kp LG(LS(RIGHT))>;
             key-positions = <19 18 17>;
-            layers = <6>;
+            layers = <7>;
         };
 
         num_equal {
             bindings = <&kp EQUAL>;
             key-positions = <16 17 18>;
-            layers = <1>;
+            layers = <3>;
             timeout-ms = <175>;
         };
 
         num_par_left {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <16 17>;
-            layers = <1>;
+            layers = <3>;
         };
 
         num_par_right {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <18 19>;
-            layers = <1>;
+            layers = <3>;
         };
 
         del_left {
@@ -278,13 +278,13 @@
         };
 
         mouse_layer_switch {
-            bindings = <&tog 7>;
+            bindings = <&tog 8>;
             key-positions = <14 15>;
             timeout-ms = <175>;
         };
 
         layer6 {
-            bindings = <&mo 6>;
+            bindings = <&mo 7>;
             key-positions = <33 34>;
         };
     };
@@ -357,13 +357,31 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base {
+        Base {
             display-name = "Base";
             bindings = <
-  &kp A            &kp C           &kp O               &kp P            &kp Z             &kp J       &kp SEMICOLON  &kp D                &sl 8             &kp Y
+  &kp A            &kp C           &kp O               &kp P            &kp Z             &kp J       &kp SEMICOLON  &kp D                &sl 1             &kp Y
   &hml LEFT_GUI Q  &hm LEFT_ALT S  &hm LEFT_CONTROL E  &kp N            &kp F             &kp L       &kp R          &hm RIGHT_CONTROL T  &hm RIGHT_ALT I   &hmr RIGHT_GUI U
   &kp W            &kp X           &kp NUMBER_6        &kp V            &kp B             &dot_colon  &kp H          &kp G                &comma_semicolon  &kp K
-                                   &lt 1 ESCAPE        &lt 1 BACKSPACE  &kp LEFT_SHIFT    &kp ENTER   &lt 4 SPACE    &lt 5 DEL
+                                   &lt 3 ESCAPE        &lt 3 BACKSPACE  &kp LEFT_SHIFT    &kp ENTER   &lt 2 SPACE    &lt 6 DEL
+            >;
+        };
+
+        Accents {
+            bindings = <
+  &a_circ             &kp N9        &oe_ligature_linux  &o_circ_minmaj  &none    &none       &none      &kp N8   &none        &u_circ
+  &kp N0              &kp NUMBER_2  &kp N7              &e_circ         &none    &kp RS(N5)  &kp MINUS  &i_circ  &i_diaresis  &kp SINGLE_QUOTE
+  &ae_ligature_linux  &none         &none               &none           &none    &none       &none      &none    &none        &none
+                                    &none               &none           &none    &none       &none      &none
+            >;
+        };
+
+        Nav {
+            bindings = <
+  &bootloader  &none         &none      &none           &studio_unlock    &kp INS         &kp HOME  &kp UP_ARROW  &kp PAGE_UP    &none
+  &none        &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none             &msc SCRL_UP    &kp LEFT  &kp DOWN      &kp RIGHT      &none
+  &kp LC(Z)    &kp LC(Y)     &kp LC(X)  &kp LC(C)       &kp LC(V)         &msc SCRL_DOWN  &kp END   &none         &kp PAGE_DOWN  &kp CAPSLOCK
+                             &none      &none           &none             &none           &none     &none
             >;
         };
 
@@ -379,19 +397,10 @@
         blt {
             display-name = "BLT";
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &bt BT_CLR     &trans        &trans        &trans        &trans
-  &trans  &trans  &trans  &trans  &trans    &trans         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
-  &trans  &trans  &trans  &trans  &trans    &kp LG(LA(K))  &kp C_VOL_UP  &kp C_VOL_DN  &trans        &bt BT_SEL 4
-                  &trans  &trans  &trans    &trans         &trans        &trans
-            >;
-        };
-
-        navi_right {
-            bindings = <
-  &a_circ    &trans     &trans     &trans        &trans       &kp CARET       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-  &trans     &trans     &trans     &kp LEFT_ALT  &trans       &msc SCRL_UP    &kp LEFT       &kp UP_ARROW  &kp DOWN_ARROW        &kp RIGHT
-  &kp LC(Z)  &kp LC(Y)  &kp LC(X)  &kp LC(C)     &kp LC(V)    &msc SCRL_DOWN  &kp HOME       &kp PAGE_UP   &kp PAGE_DOWN         &kp END
-                        &trans     &trans        &trans       &kp UNDERSCORE  &trans         &trans
+  &bootloader  &trans  &trans  &trans  &trans    &bt BT_CLR     &trans        &trans        &trans        &trans
+  &trans       &trans  &trans  &trans  &trans    &trans         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
+  &trans       &trans  &trans  &trans  &trans    &kp LG(LA(K))  &kp C_VOL_UP  &kp C_VOL_DN  &trans        &bt BT_SEL 4
+                       &trans  &trans  &trans    &trans         &trans        &trans
             >;
         };
 
@@ -428,15 +437,6 @@
   &trans  &trans  &trans  &trans  &trans    &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
   &trans  &trans  &trans  &trans  &trans    &msc SCRL_DOWN  &trans          &trans        &trans          &trans
                   &trans  &trans  &trans    &mkp LCLK       &mkp MCLK       &mkp RCLK
-            >;
-        };
-
-        Accents {
-            bindings = <
-  &a_circ             &kp N9        &oe_ligature_linux  &o_circ_minmaj  &none     &none       &none      &kp N8   &none        &u_circ
-  &kp N0              &kp NUMBER_2  &kp N7              &e_circ         &none     &kp RS(N5)  &kp MINUS  &i_circ  &i_diaresis  &kp SINGLE_QUOTE
-  &ae_ligature_linux  &none         &none               &none           &none     &none       &none      &none    &none        &none
-                                    &trans              &trans          &trans    &trans      &trans     &trans
             >;
         };
     };
