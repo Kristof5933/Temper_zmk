@@ -9,7 +9,7 @@ layers:
   - J
   - ;
   - D
-  - {t: Accents, h: sticky}
+  - {t: Acnts L, h: sticky}
   - Y
   - {t: Q, h: Win}
   - {t: S, h: Alt}
@@ -36,7 +36,7 @@ layers:
   - {t: ↹, h: Shift}
   - {t: ⏎, h: Funct}
   - {t: ␣, h: Nav}
-  - {t: ⌦, h: AltGr}
+  - {t: ⌦, h: AltGr L}
   Base:
   - A
   - C
@@ -46,7 +46,7 @@ layers:
   - J
   - ;
   - D
-  - {t: Accents, h: sticky}
+  - {t: Acnts W, h: sticky}
   - Y
   - {t: Q, h: Win}
   - {t: S, h: Alt}
@@ -73,8 +73,45 @@ layers:
   - {t: ↹, h: Shift}
   - {t: ⏎, h: Funct}
   - {t: ␣, h: Nav}
-  - {t: ⌦, h: AltGr}
-  Accents:
+  - {t: ⌦, h: AltGr W}
+  Acnts L:
+  - '&a_circ'
+  - '9'
+  - '`'
+  - {t: '&o_circ', s: '&o_circ_maj'}
+  - ''
+  - ''
+  - ''
+  - '8'
+  - {type: held}
+  - '&u_circ'
+  - '0'
+  - '2'
+  - '7'
+  - '&e_circ'
+  - ''
+  - '5'
+  - '-'
+  - '&i_circ'
+  - '&i_diaresis'
+  - ''''
+  - '&ae_ligature_linux'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '4'
+  - ''
+  Acnts W:
   - '&a_circ'
   - '9'
   - '&oe_ligature_windows'
@@ -148,7 +185,44 @@ layers:
   - ''
   - {type: held}
   - ''
-  AltGr:
+  AltGr L:
+  - '&circ'
+  - \
+  - Sft+\
+  - ']'
+  - Sft+'
+  - AltGr+0
+  - '1'
+  - ✖️
+  - '4'
+  - '&back_tick'
+  - AltGr+4
+  - '5'
+  - '-'
+  - AltGr+=
+  - '='
+  - AltGr+8
+  - ➕
+  - '6'
+  - ➗
+  - '3'
+  - AltGr+2
+  - AltGr+5
+  - AltGr+-
+  - '8'
+  - AltGr+3
+  - AltGr+6
+  - /
+  - ','
+  - .
+  - Sft+M
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  AltGr W:
   - '&circ'
   - \
   - Sft+\
