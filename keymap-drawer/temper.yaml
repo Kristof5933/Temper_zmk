@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: temper}
 layers:
-  Base:
+  Linux:
   - A
   - C
   - O
@@ -77,7 +77,7 @@ layers:
   Nav:
   - Boot
   - ''
-  - ''
+  - Ctl+Print Screen
   - ''
   - '&studio_unlock'
   - Insert
@@ -336,40 +336,40 @@ layers:
 combos:
 - p: [10, 19]
   k: CAPSLOCK
-  l: [Base]
+  l: [Linux]
 - p: [10, 11, 12]
   k: Alt+↹
-  l: [Base]
+  l: [Linux]
 - p: [0, 10]
   k: '~'
-  l: [Base]
+  l: [Linux]
 - p: [21, 22]
   k: Cut
-  l: [Base]
+  l: [Linux]
 - p: [22, 23]
   k: Copy
-  l: [Base]
+  l: [Linux]
 - p: [23, 24]
   k: Paste
-  l: [Base]
+  l: [Linux]
 - p: [9, 8]
   k: Snip Img
-  l: [Base]
+  l: [Linux]
 - p: [27, 28]
   k: ;
-  l: [Base]
+  l: [Linux]
 - p: [18, 19]
   k: '-'
-  l: [Base]
+  l: [Linux]
 - p: [0, 4, 32]
   k: Boot
-  l: [Base]
+  l: [Linux]
 - p: [0, 1, 2]
   k: Win Close
-  l: [Base]
+  l: [Linux]
 - p: [0, 1]
   k: ESCAPE
-  l: [Base]
+  l: [Linux]
 - p: [32, 33]
   k: Media
 - p: [16, 17]
