@@ -37,10 +37,47 @@ layers:
   - {t: ⏎, h: Funct}
   - {t: ␣, h: Nav}
   - {t: ⌦, h: AltGr}
+  Base:
+  - A
+  - C
+  - O
+  - P
+  - Z
+  - J
+  - ;
+  - D
+  - {t: Accents, h: sticky}
+  - Y
+  - {t: Q, h: Win}
+  - {t: S, h: Alt}
+  - {t: E, h: LEFT CONTROL}
+  - N
+  - F
+  - L
+  - R
+  - {t: T, h: RIGHT CONTROL}
+  - {t: I, h: AltGr}
+  - {t: U, h: Win}
+  - W
+  - X
+  - {t: '6', s: Sft+M}
+  - V
+  - B
+  - {t: 'Sft+,', s: .}
+  - H
+  - G
+  - {t: M, s: ','}
+  - K
+  - {t: ESCAPE, h: Media}
+  - {t: ⌫, h: Num}
+  - {t: ↹, h: Shift}
+  - {t: ⏎, h: Funct}
+  - {t: ␣, h: Nav}
+  - {t: ⌦, h: AltGr}
   Accents:
   - '&a_circ'
   - '9'
-  - '&oe_ligature_linux'
+  - '&oe_ligature_windows'
   - {t: '&o_circ', s: '&o_circ_maj'}
   - ''
   - ''
@@ -293,8 +330,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Mouse:
   - {t: ▽, type: trans}
@@ -404,4 +441,8 @@ combos:
 - p: [14, 15]
   k: {t: Mouse, h: toggle}
 - p: [33, 34]
-  k: Focus
+  k: {t: Base, h: toggle}
+  l: [Linux]
+- p: [33, 34]
+  k: {t: Linux, h: toggle}
+  l: [Base]
