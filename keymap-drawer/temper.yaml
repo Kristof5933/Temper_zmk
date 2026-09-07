@@ -31,8 +31,8 @@ layers:
   - G
   - {t: M, s: ','}
   - K
-  - {t: ESCAPE, h: BLT}
-  - {t: ⌫, h: Num}
+  - {t: ESCAPE, h: Media}
+  - {t: '6', s: Sft+M}
   - {t: ↹, h: Shift}
   - {t: ⏎, h: Funct}
   - {t: ␣, h: Nav}
@@ -53,7 +53,7 @@ layers:
   - '7'
   - '&e_circ'
   - ''
-  - Sft+5
+  - '5'
   - '-'
   - '&i_circ'
   - '&i_diaresis'
@@ -112,24 +112,24 @@ layers:
   - {type: held}
   - ''
   AltGr:
-  - '{'
+  - '&circ'
   - \
   - Sft+\
-  - '}'
+  - ']'
   - Sft+'
   - AltGr+0
   - '1'
-  - '*'
+  - '#'
   - '4'
-  - AltGr+7
+  - '&back_tick'
   - AltGr+4
   - '5'
-  - _
+  - '-'
   - AltGr+=
   - '='
   - AltGr+8
   - ➕
-  - '-'
+  - '6'
   - ➗
   - '3'
   - AltGr+2
@@ -148,44 +148,9 @@ layers:
   - ''
   - ''
   - {type: held}
-  Num:
-  - Boot
-  - ''
-  - ''
-  - ''
-  - '&studio_unlock'
-  - ✖️
-  - Sft+7
-  - Sft+8
-  - Sft+9
-  - Boot
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ➗
-  - Sft+4
-  - Sft+5
-  - Sft+6
-  - ➗
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Sft+KP SUBTRACT
-  - Sft+1
-  - Sft+2
-  - Sft+3
-  - ','
-  - ''
-  - {type: held}
-  - ''
-  - ➕
-  - Sft+0
-  - '='
-  BLT:
+  Num: [Boot, '', '', '', '&studio_unlock', ✖️, Sft+7, Sft+8, Sft+9, Boot, '', '', '', '', '', ➗, Sft+4, Sft+5, Sft+6, 'Sft+,', '', '', '', '', '', Sft+KP SUBTRACT,
+    Sft+1, Sft+2, Sft+3, ',', '', '', '', ➕, Sft+0, '=']
+  Media:
   - Boot
   - ''
   - ''
@@ -259,7 +224,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  focus_switch:
+  Focus:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -296,7 +261,7 @@ layers:
   - {type: held}
   - {type: held}
   - {t: ▽, type: trans}
-  mouse:
+  Mouse:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -371,25 +336,25 @@ combos:
   k: ESCAPE
   l: [Base]
 - p: [32, 33]
-  k: BLT
+  k: Media
 - p: [16, 17]
   k: Gui+←
-  l: [focus_switch]
+  l: [Focus]
 - p: [19, 18]
   k: Gui+→
-  l: [focus_switch]
+  l: [Focus]
 - p: [7, 8]
   k: Gui+UP ARROW
-  l: [focus_switch]
+  l: [Focus]
 - p: [17, 18]
   k: Gui+DOWN ARROW
-  l: [focus_switch]
+  l: [Focus]
 - p: [16, 17, 18]
   k: Gui+Sft+←
-  l: [focus_switch]
+  l: [Focus]
 - p: [19, 18, 17]
   k: Gui+Sft+→
-  l: [focus_switch]
+  l: [Focus]
 - p: [16, 17, 18]
   k: '='
   l: [Num]
@@ -402,6 +367,6 @@ combos:
 - p: [20, 23]
   k: ⌦
 - p: [14, 15]
-  k: {t: mouse, h: toggle}
+  k: {t: Mouse, h: toggle}
 - p: [33, 34]
-  k: focus_switch
+  k: Focus
