@@ -123,10 +123,10 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        o_circ_minmaj: o_circ_minmaj {
+        o_circ_upper_lower: o_circ_upper_lower {
             compatible = "zmk,behavior-mod-morph";
-            label = "O_CIRC_MINMAJ";
-            bindings = <&o_circ>, <&o_circ_maj>;
+            label = "O_CIRC_UPPER_LOWER";
+            bindings = <&o_circ>, <&o_circ_upper>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -136,6 +136,33 @@
             compatible = "zmk,behavior-mod-morph";
             label = "DASH_QUESTION";
             bindings = <&kp NUMBER_6>, <&kp LS(M)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        a_circ_linux: a_circ_linux {
+            compatible = "zmk,behavior-mod-morph";
+            label = "A_CIRC_LINUX";
+            bindings = <&kp RA(Q)>, <&kp RA(A)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        a_circ_windows: a_circ_windows {
+            compatible = "zmk,behavior-mod-morph";
+            label = "A_CIRC_WINDOWS";
+            bindings = <&a_circ_windows_lower>, <&a_circ_windows_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        c_cedilla_windows: c_cedilla_windows {
+            compatible = "zmk,behavior-mod-morph";
+            label = "C_CEDILLA_WINDOWS";
+            bindings = <&kp N9>, <&c_cedilla_windows_upper>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -306,7 +333,7 @@
     };
 
     macros {
-        a_circ: a_circ {
+        a_circ_windows_lower: a_circ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET &kp Q>;
@@ -362,7 +389,7 @@
             label = "U_CIRC";
         };
 
-        o_circ_maj: o_circ_maj {
+        o_circ_upper: o_circ_maj {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET &kp LS(O)>;
@@ -396,6 +423,27 @@
             bindings = <&kp RA(NUMBER_2) &kp SPACE>;
             label = "TILDE_WINDOWS";
         };
+
+        ae_ligature_windows: ae_windows_ligature {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N0 &kt LEFT_ALT>;
+            label = "AE_WINDOWS_LIGATURE";
+        };
+
+        a_circ_windows_upper: a_circ_windows_maj {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp LS(Q)>;
+            label = "A_CIRC_WINDOWS_MAJ";
+        };
+
+        c_cedilla_windows_upper: c_cedilla_maj_windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N9 &kt LEFT_ALT>;
+            label = "C_CEDILLA_MAJ_WINDOWS";
+        };
     };
 
     keymap {
@@ -426,10 +474,10 @@
 
         AccentsL {
             bindings = <
-  &a_circ             &kp N9        &kp GRAVE  &o_circ_minmaj  &none    &none   &none         &kp N8   &none        &u_circ
-  &kp N0              &kp NUMBER_2  &kp N7     &e_circ         &none    &kp N5  &kp MINUS     &i_circ  &i_diaresis  &kp SINGLE_QUOTE
-  &ae_ligature_linux  &none         &none      &none           &none    &none   &none         &none    &none        &none
-                                    &none      &none           &none    &none   &kp NUMBER_4  &none
+  &a_circ_linux       &kp RA(R)     &kp GRAVE  &o_circ_upper_lower  &none    &none   &none         &kp N8   &none        &u_circ
+  &kp N0              &kp NUMBER_2  &kp N7     &e_circ              &none    &kp N5  &kp MINUS     &i_circ  &i_diaresis  &kp SINGLE_QUOTE
+  &ae_ligature_linux  &none         &none      &none                &none    &none   &none         &none    &none        &none
+                                    &none      &none                &none    &none   &kp NUMBER_4  &none
             >;
 
             label = "Acnts L";
@@ -438,10 +486,10 @@
         AccentsW {
             label = "Acnts W";
             bindings = <
-  &a_circ             &kp N9        &oe_ligature_windows  &o_circ_minmaj  &none    &none   &none         &kp N8   &none        &u_circ
-  &kp N0              &kp NUMBER_2  &kp N7                &e_circ         &none    &kp N5  &kp MINUS     &i_circ  &i_diaresis  &kp SINGLE_QUOTE
-  &ae_ligature_linux  &none         &none                 &none           &none    &none   &none         &none    &none        &none
-                                    &none                 &none           &none    &none   &kp NUMBER_4  &none
+  &a_circ_windows       &c_cedilla_windows  &oe_ligature_windows  &o_circ_upper_lower  &none    &none   &none         &kp N8   &none        &u_circ
+  &kp N0                &kp NUMBER_2        &kp N7                &e_circ              &none    &kp N5  &kp MINUS     &i_circ  &i_diaresis  &kp SINGLE_QUOTE
+  &ae_ligature_windows  &none               &none                 &none                &none    &none   &none         &none    &none        &none
+                                            &none                 &none                &none    &none   &kp NUMBER_4  &none
             >;
         };
 
@@ -450,7 +498,7 @@
   &bootloader   &none         &kp LC(PRINTSCREEN)  &none           &studio_unlock    &kp INS         &kp HOME  &kp UP_ARROW  &kp PAGE_UP    &bootloader
   &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL            &kp LEFT_SHIFT  &none             &msc SCRL_UP    &kp LEFT  &kp DOWN      &kp RIGHT      &none
   &kp LC(Z)     &kp LC(Y)     &kp LC(X)            &kp LC(C)       &kp LC(V)         &msc SCRL_DOWN  &kp END   &none         &kp PAGE_DOWN  &kp CAPSLOCK
-                              &none                &none           &none             &none           &none     &none
+                              &none                &none           &trans            &none           &none     &none
             >;
 
             label = "Nav";
@@ -472,7 +520,7 @@
             bindings = <
   &circ             &kp NON_US_BACKSLASH  &kp LS(NON_US_BACKSLASH)  &kp RIGHT_BRACKET  &kp LS(APOS)        &kp RA(N0)        &kp NUMBER_1  &kp KP_MULTIPLY  &kp NUMBER_4   &back_tick
   &kp RA(NUMBER_4)  &kp N5                &kp MINUS                 &kp RA(EQUAL)      &kp EQUAL           &kp RA(N8)        &kp KP_PLUS   &kp NUMBER_6     &kp KP_DIVIDE  &kp NUMBER_3
-  &kp RA(NUMBER_2)  &kp RA(N5)            &kp RA(MINUS)             &kp N8             &kp RA(NUMBER_3)    &kp RA(NUMBER_6)  &kp SLASH     &kp COMMA        &kp DOT        &kp LS(M)
+  &tilde_windows    &kp RA(N5)            &kp RA(MINUS)             &kp N8             &kp RA(NUMBER_3)    &kp RA(NUMBER_6)  &kp SLASH     &kp COMMA        &kp DOT        &kp LS(M)
                                           &none                     &none              &none               &none             &none         &none
             >;
         };
