@@ -23,7 +23,7 @@ layers:
   - {t: U, h: Win}
   - W
   - X
-  - '6'
+  - {t: '6', s: Sft+M}
   - V
   - B
   - {t: 'Sft+,', s: .}
@@ -32,7 +32,7 @@ layers:
   - {t: M, s: ','}
   - K
   - {t: ESCAPE, h: Media}
-  - {t: '6', s: Sft+M}
+  - {t: ⌫, h: Num}
   - {t: ↹, h: Shift}
   - {t: ⏎, h: Funct}
   - {t: ␣, h: Nav}
@@ -119,7 +119,7 @@ layers:
   - Sft+'
   - AltGr+0
   - '1'
-  - '#'
+  - ✖️
   - '4'
   - '&back_tick'
   - AltGr+4
@@ -148,8 +148,43 @@ layers:
   - ''
   - ''
   - {type: held}
-  Num: [Boot, '', '', '', '&studio_unlock', ✖️, Sft+7, Sft+8, Sft+9, Boot, '', '', '', '', '', ➗, Sft+4, Sft+5, Sft+6, 'Sft+,', '', '', '', '', '', Sft+KP SUBTRACT,
-    Sft+1, Sft+2, Sft+3, ',', '', '', '', ➕, Sft+0, '=']
+  Num:
+  - Boot
+  - ''
+  - ''
+  - ''
+  - '&studio_unlock'
+  - ✖️
+  - Sft+7
+  - Sft+8
+  - Sft+9
+  - Boot
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ➗
+  - Sft+4
+  - Sft+5
+  - Sft+6
+  - Sft+,
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+KP SUBTRACT
+  - Sft+1
+  - Sft+2
+  - Sft+3
+  - ','
+  - ''
+  - {type: held}
+  - ''
+  - ➕
+  - Sft+0
+  - '='
   Media:
   - Boot
   - ''
@@ -160,7 +195,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Boot
   - ''
   - ''
   - ''
