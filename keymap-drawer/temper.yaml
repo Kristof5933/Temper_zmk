@@ -75,10 +75,10 @@ layers:
   - {t: ␣, h: Nav}
   - {t: ⌦, h: AltGr W}
   Acnts L:
-  - '&a_circ'
-  - '9'
+  - {t: AltGr+Q, s: AltGr+A}
+  - AltGr+R
   - '`'
-  - {t: '&o_circ', s: '&o_circ_maj'}
+  - {t: '&o_circ', s: '&o_circ_upper'}
   - ''
   - ''
   - ''
@@ -112,10 +112,10 @@ layers:
   - '4'
   - ''
   Acnts W:
-  - '&a_circ'
-  - '9'
+  - {t: '&a_circ_windows_lower', s: '&a_circ_windows_upper'}
+  - {t: '9', s: '&c_cedilla_windows_upper'}
   - '&oe_ligature_windows'
-  - {t: '&o_circ', s: '&o_circ_maj'}
+  - {t: '&o_circ', s: '&o_circ_upper'}
   - ''
   - ''
   - ''
@@ -132,7 +132,7 @@ layers:
   - '&i_circ'
   - '&i_diaresis'
   - ''''
-  - '&ae_ligature_linux'
+  - '&ae_ligature_windows'
   - ''
   - ''
   - ''
@@ -181,7 +181,7 @@ layers:
   - CAPSLOCK
   - ''
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - {type: held}
   - ''
@@ -243,7 +243,7 @@ layers:
   - '6'
   - ➗
   - '3'
-  - AltGr+2
+  - '&tilde_windows'
   - AltGr+5
   - AltGr+-
   - '8'
