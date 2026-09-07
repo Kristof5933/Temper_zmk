@@ -221,63 +221,63 @@
         };
 
         bluetooth {
-            bindings = <&mo 5>;
+            bindings = <&mo 8>;
             key-positions = <32 33>;
         };
 
         win_nav_left {
             bindings = <&kp LG(LEFT)>;
             key-positions = <16 17>;
-            layers = <7>;
+            layers = <10>;
         };
 
         win_nav_right {
             bindings = <&kp LG(RIGHT)>;
             key-positions = <19 18>;
-            layers = <7>;
+            layers = <10>;
         };
 
         win_nav_up {
             bindings = <&kp LG(UP_ARROW)>;
             key-positions = <7 8>;
-            layers = <7>;
+            layers = <10>;
         };
 
         win_nav_down {
             bindings = <&kp LG(DOWN_ARROW)>;
             key-positions = <17 18>;
-            layers = <7>;
+            layers = <10>;
         };
 
         win_nav_left_shift {
             bindings = <&kp LG(LS(LEFT))>;
             key-positions = <16 17 18>;
-            layers = <7>;
+            layers = <10>;
         };
 
         win_nav_right_shift {
             bindings = <&kp LG(LS(RIGHT))>;
             key-positions = <19 18 17>;
-            layers = <7>;
+            layers = <10>;
         };
 
         num_equal {
             bindings = <&kp EQUAL>;
             key-positions = <16 17 18>;
-            layers = <4>;
+            layers = <7>;
             timeout-ms = <175>;
         };
 
         num_par_left {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <16 17>;
-            layers = <4>;
+            layers = <7>;
         };
 
         num_par_right {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <18 19>;
-            layers = <4>;
+            layers = <7>;
         };
 
         del_left {
@@ -287,14 +287,21 @@
         };
 
         mouse_layer_switch {
-            bindings = <&tog 8>;
+            bindings = <&tog 11>;
             key-positions = <14 15>;
             timeout-ms = <175>;
         };
 
-        layer6 {
-            bindings = <&mo 7>;
+        switch_to_win {
+            bindings = <&to 1>;
             key-positions = <33 34>;
+            layers = <0>;
+        };
+
+        switch_to_linux {
+            bindings = <&to 0>;
+            key-positions = <33 34>;
+            layers = <1>;
         };
     };
 
@@ -375,32 +382,67 @@
             bindings = <&kp RA(N7) &kp SPACE>;
             label = "BACK_TICK";
         };
+
+        oe_ligature_windows: oe_ligature_windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_N1 &kp KP_N5 &kp KP_N6 &kt LEFT_ALT>;
+            label = "OE_LIGATURE_WINDOWS";
+        };
+
+        tilde_windows: tilde_windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(NUMBER_2) &kp SPACE>;
+            label = "TILDE_WINDOWS";
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        Base {
+        Basel {
             display-name = "Base";
             bindings = <
-  &kp A            &kp C           &kp O               &kp P            &kp Z                 &kp J        &kp SEMICOLON  &kp D                &sl 1             &kp Y
+  &kp A            &kp C           &kp O               &kp P            &kp Z                 &kp J        &kp SEMICOLON  &kp D                &sl 2             &kp Y
   &hml LEFT_GUI Q  &hm LEFT_ALT S  &hm LEFT_CONTROL E  &kp N            &kp F                 &kp L        &kp R          &hm RIGHT_CONTROL T  &hm RIGHT_ALT I   &hmr RIGHT_GUI U
   &kp W            &kp X           &dash_question      &kp V            &kp B                 &dot_colon   &kp H          &kp G                &comma_semicolon  &kp K
-                                   &lt 5 ESCAPE        &lt 4 BACKSPACE  &hm LEFT_SHIFT TAB    &lt 6 ENTER  &lt 2 SPACE    &lt 3 DEL
+                                   &lt 8 ESCAPE        &lt 7 BACKSPACE  &hm LEFT_SHIFT TAB    &lt 9 ENTER  &lt 4 SPACE    &lt 5 DEL
             >;
 
             label = "Linux";
         };
 
-        Accents {
+        Basew {
+            label = "Windows";
+            display-name = "Base";
             bindings = <
-  &a_circ             &kp N9        &oe_ligature_linux  &o_circ_minmaj  &none    &none   &none         &kp N8   &none        &u_circ
-  &kp N0              &kp NUMBER_2  &kp N7              &e_circ         &none    &kp N5  &kp MINUS     &i_circ  &i_diaresis  &kp SINGLE_QUOTE
-  &ae_ligature_linux  &none         &none               &none           &none    &none   &none         &none    &none        &none
-                                    &none               &none           &none    &none   &kp NUMBER_4  &none
+  &kp A            &kp C           &kp O               &kp P            &kp Z                 &kp J        &kp SEMICOLON  &kp D                &sl 3             &kp Y
+  &hml LEFT_GUI Q  &hm LEFT_ALT S  &hm LEFT_CONTROL E  &kp N            &kp F                 &kp L        &kp R          &hm RIGHT_CONTROL T  &hm RIGHT_ALT I   &hmr RIGHT_GUI U
+  &kp W            &kp X           &dash_question      &kp V            &kp B                 &dot_colon   &kp H          &kp G                &comma_semicolon  &kp K
+                                   &lt 8 ESCAPE        &lt 7 BACKSPACE  &hm LEFT_SHIFT TAB    &lt 9 ENTER  &lt 4 SPACE    &lt 6 DEL
+            >;
+        };
+
+        AccentsL {
+            bindings = <
+  &a_circ             &kp N9        &kp GRAVE  &o_circ_minmaj  &none    &none   &none         &kp N8   &none        &u_circ
+  &kp N0              &kp NUMBER_2  &kp N7     &e_circ         &none    &kp N5  &kp MINUS     &i_circ  &i_diaresis  &kp SINGLE_QUOTE
+  &ae_ligature_linux  &none         &none      &none           &none    &none   &none         &none    &none        &none
+                                    &none      &none           &none    &none   &kp NUMBER_4  &none
             >;
 
             label = "Accents";
+        };
+
+        AccentsW {
+            label = "Accents";
+            bindings = <
+  &a_circ             &kp N9        &oe_ligature_windows  &o_circ_minmaj  &none    &none   &none         &kp N8   &none        &u_circ
+  &kp N0              &kp NUMBER_2  &kp N7                &e_circ         &none    &kp N5  &kp MINUS     &i_circ  &i_diaresis  &kp SINGLE_QUOTE
+  &ae_ligature_linux  &none         &none                 &none           &none    &none   &none         &none    &none        &none
+                                    &none                 &none           &none    &none   &kp NUMBER_4  &none
+            >;
         };
 
         Nav {
@@ -414,7 +456,7 @@
             label = "Nav";
         };
 
-        AltGr {
+        AltGrL {
             bindings = <
   &circ             &kp NON_US_BACKSLASH  &kp LS(NON_US_BACKSLASH)  &kp RIGHT_BRACKET  &kp LS(APOS)        &kp RA(N0)        &kp NUMBER_1  &kp KP_MULTIPLY  &kp NUMBER_4   &back_tick
   &kp RA(NUMBER_4)  &kp N5                &kp MINUS                 &kp RA(EQUAL)      &kp EQUAL           &kp RA(N8)        &kp KP_PLUS   &kp NUMBER_6     &kp KP_DIVIDE  &kp NUMBER_3
@@ -423,6 +465,16 @@
             >;
 
             label = "AltGr";
+        };
+
+        AltGrW {
+            label = "AltGr";
+            bindings = <
+  &circ             &kp NON_US_BACKSLASH  &kp LS(NON_US_BACKSLASH)  &kp RIGHT_BRACKET  &kp LS(APOS)        &kp RA(N0)        &kp NUMBER_1  &kp KP_MULTIPLY  &kp NUMBER_4   &back_tick
+  &kp RA(NUMBER_4)  &kp N5                &kp MINUS                 &kp RA(EQUAL)      &kp EQUAL           &kp RA(N8)        &kp KP_PLUS   &kp NUMBER_6     &kp KP_DIVIDE  &kp NUMBER_3
+  &kp RA(NUMBER_2)  &kp RA(N5)            &kp RA(MINUS)             &kp N8             &kp RA(NUMBER_3)    &kp RA(NUMBER_6)  &kp SLASH     &kp COMMA        &kp DOT        &kp LS(M)
+                                          &none                     &none              &none               &none             &none         &none
+            >;
         };
 
         Num {
