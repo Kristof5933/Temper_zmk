@@ -230,6 +230,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        oe_ligature_linux: oe_ligature_linux {
+            compatible = "zmk,behavior-mod-morph";
+            label = "OE_LIGATURE_LINUX";
+            bindings = <&oe_ligature_linux_lower>, <&oe_ligature_linux_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -403,7 +412,7 @@
             label = "A_CIRC";
         };
 
-        oe_ligature_linux: oe_ligature_linux {
+        oe_ligature_linux_lower: oe_ligature_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N5 &kp N3 &kp ENTER>;
@@ -424,7 +433,7 @@
             label = "E_CIRC";
         };
 
-        ae_ligature_linux: ae_ligature {
+        ae_ligature_linux_lower: ae_ligature {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp E &kp N6 &kp RET>;
@@ -556,6 +565,13 @@
             bindings = <&kt LEFT_ALT &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N6 &kt LEFT_ALT>;
             label = "TYPOGRAPHICAL_APO_WINDOWS";
         };
+
+        oe_ligature_linux_upper: oe_ligature_linux_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N5 &kp KP_N2 &kp ENTER>;
+            label = "OE_LIGATURE_LINUX_UPPER";
+        };
     };
 
     keymap {
@@ -586,10 +602,10 @@
 
         AccentsL {
             bindings = <
-  &a_circ_linux       &kp RA(R)       &kp GRAVE  &o_circ_upper_lower  &none    &none   &none                     &kp N8   &none        &u_circ
-  &a_acute            &e_acute_linux  &e_grave   &e_circ              &none    &kp N5  &kp MINUS                 &i_circ  &i_diaresis  &u_grave
-  &ae_ligature_linux  &none           &none      &none                &none    &none   &none                     &none    &none        &none
-                                      &none      &none                &none    &none   &typographical_apo_linux  &none
+  &a_circ_linux             &kp RA(R)       &oe_ligature_linux  &o_circ_upper_lower  &none             &none   &none                     &kp N8   &none        &u_circ
+  &a_acute                  &e_acute_linux  &e_grave            &e_circ              &none             &kp N5  &kp MINUS                 &i_circ  &i_diaresis  &u_grave
+  &ae_ligature_linux_lower  &none           &none               &none                &none             &none   &none                     &none    &none        &none
+                                            &none               &none                &kp LEFT_SHIFT    &none   &typographical_apo_linux  &none
             >;
 
             label = "Acnts L";
@@ -598,10 +614,10 @@
         AccentsW {
             label = "Acnts W";
             bindings = <
-  &a_circ_windows       &c_cedilla_windows  &oe_ligature_windows  &o_circ_upper_lower  &none    &none   &none                       &kp N8   &none        &u_circ
-  &a_acute              &e_acute_windows    &e_grave              &e_circ              &none    &kp N5  &kp MINUS                   &i_circ  &i_diaresis  &u_grave
-  &ae_ligature_windows  &none               &none                 &none                &none    &none   &none                       &none    &none        &none
-                                            &none                 &none                &none    &none   &typographical_apo_windows  &none
+  &a_circ_windows       &c_cedilla_windows  &oe_ligature_windows  &o_circ_upper_lower  &none             &none   &none                       &kp N8   &none        &u_circ
+  &a_acute              &e_acute_windows    &e_grave              &e_circ              &none             &kp N5  &kp MINUS                   &i_circ  &i_diaresis  &u_grave
+  &ae_ligature_windows  &none               &none                 &none                &none             &none   &none                       &none    &none        &none
+                                            &none                 &none                &kp LEFT_SHIFT    &none   &typographical_apo_windows  &none
             >;
         };
 
