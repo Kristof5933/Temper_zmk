@@ -133,8 +133,8 @@ text.label, text.footer { stroke: black; }
 text.trans { fill: #7e8184; }
 path.combo { stroke: #7f7f7f; }
 </style>
-<g transform="translate(30, 0)" class="layer-Linux">
-<text x="0" y="28" class="label" id="Linux">Linux:</text>
+<g transform="translate(30, 0)" class="layer-linux">
+<text x="0" y="28" class="label" id="linux">linux:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -170,9 +170,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(644, 35)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#Acnts-L">
+<a href="#Accts-lnx">
 <text x="0" y="0" class="key tap layer-activator">
-<tspan x="0" dy="-0.6em">Acnts</tspan><tspan x="0" dy="1.2em">L</tspan>
+<tspan x="0" dy="-0.6em">Accts</tspan><tspan x="0" dy="1.2em">lnx</tspan>
 </text>
 </a><text x="0" y="24" class="key hold">sticky</text>
 <text x="0" y="-24" class="key shifted">/</text>
@@ -302,8 +302,8 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(561, 203)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">⌦</text>
-<a href="#AltGr-L">
-<text x="0" y="24" class="key hold layer-activator">AltGr L</text>
+<a href="#AltGr-l">
+<text x="0" y="24" class="key hold layer-activator">AltGr l</text>
 </a></g>
 <g class="combo combopos-0">
 <path d="M364,105 l-317,0" class="combo"/>
@@ -389,14 +389,14 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g class="combo combopos-15">
 <rect rx="6" ry="6" x="453" y="204" width="28" height="26" class="combo"/>
-<a href="#Windows">
-<text x="467" y="217" class="combo tap layer-activator">Windows</text>
+<a href="#windows">
+<text x="467" y="217" class="combo tap layer-activator">windows</text>
 </a><text x="467" y="228" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
-<g transform="translate(30, 329)" class="layer-Windows">
-<text x="0" y="28" class="label" id="Windows">Windows:</text>
+<g transform="translate(30, 329)" class="layer-windows">
+<text x="0" y="28" class="label" id="windows">windows:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -432,9 +432,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(644, 35)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#Acnts-W">
+<a href="#Accts-win">
 <text x="0" y="0" class="key tap layer-activator">
-<tspan x="0" dy="-0.6em">Acnts</tspan><tspan x="0" dy="1.2em">W</tspan>
+<tspan x="0" dy="-0.6em">Accts</tspan><tspan x="0" dy="1.2em">win</tspan>
 </text>
 </a><text x="0" y="24" class="key hold">sticky</text>
 <text x="0" y="-24" class="key shifted">/</text>
@@ -564,8 +564,8 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(561, 203)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">⌦</text>
-<a href="#AltGr-W">
-<text x="0" y="24" class="key hold layer-activator">AltGr W</text>
+<a href="#AltGr-w">
+<text x="0" y="24" class="key hold layer-activator">AltGr w</text>
 </a></g>
 <g class="combo combopos-0">
 <path d="M364,223 l-52,0" class="combo"/>
@@ -590,14 +590,14 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="453" y="204" width="28" height="26" class="combo"/>
-<a href="#Linux">
-<text x="467" y="217" class="combo tap layer-activator">Linux</text>
+<a href="#linux">
+<text x="467" y="217" class="combo tap layer-activator">linux</text>
 </a><text x="467" y="228" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
-<g transform="translate(30, 659)" class="layer-Acnts L">
-<text x="0" y="28" class="label" id="Acnts-L">Acnts L:</text>
+<g transform="translate(30, 659)" class="layer-Accts lnx">
+<text x="0" y="28" class="label" id="Accts-lnx">Accts lnx:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -755,8 +755,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 988)" class="layer-Acnts W">
-<text x="0" y="28" class="label" id="Acnts-W">Acnts W:</text>
+<g transform="translate(30, 988)" class="layer-Accts win">
+<text x="0" y="28" class="label" id="Accts-win">Accts win:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1086,8 +1086,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 1646)" class="layer-AltGr L">
-<text x="0" y="28" class="label" id="AltGr-L">AltGr L:</text>
+<g transform="translate(30, 1646)" class="layer-AltGr l">
+<text x="0" y="28" class="label" id="AltGr-l">AltGr l:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1250,8 +1250,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 1976)" class="layer-AltGr W">
-<text x="0" y="28" class="label" id="AltGr-W">AltGr W:</text>
+<g transform="translate(30, 1976)" class="layer-AltGr w">
+<text x="0" y="28" class="label" id="AltGr-w">AltGr w:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

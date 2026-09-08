@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: temper}
 layers:
-  Linux:
+  linux:
   - A
   - C
   - O
@@ -9,7 +9,7 @@ layers:
   - J
   - ;
   - D
-  - {t: Acnts L, h: sticky, s: /}
+  - {t: Accts lnx, h: sticky, s: /}
   - Y
   - {t: Q, h: Win}
   - {t: S, h: Alt}
@@ -36,8 +36,8 @@ layers:
   - {t: ↹, h: Shift}
   - {t: ⏎, h: Funct}
   - {t: ␣, h: Nav}
-  - {t: ⌦, h: AltGr L}
-  Windows:
+  - {t: ⌦, h: AltGr l}
+  windows:
   - A
   - C
   - O
@@ -46,7 +46,7 @@ layers:
   - J
   - ;
   - D
-  - {t: Acnts W, h: sticky, s: /}
+  - {t: Accts win, h: sticky, s: /}
   - Y
   - {t: Q, h: Win}
   - {t: S, h: Alt}
@@ -73,8 +73,8 @@ layers:
   - {t: ↹, h: Shift}
   - {t: ⏎, h: Funct}
   - {t: ␣, h: Nav}
-  - {t: ⌦, h: AltGr W}
-  Acnts L:
+  - {t: ⌦, h: AltGr w}
+  Accts lnx:
   - {t: AltGr+Q, s: AltGr+A}
   - AltGr+R
   - {t: '&oe_ligature_linux_lower', s: '&oe_ligature_linux_upper'}
@@ -111,7 +111,7 @@ layers:
   - ''
   - '&typographical_apo_linux'
   - ''
-  Acnts W:
+  Accts win:
   - {t: '&a_circ_windows_lower', s: '&a_circ_windows_upper'}
   - {t: '9', s: '&c_cedilla_windows_upper'}
   - '&oe_ligature_windows'
@@ -185,7 +185,7 @@ layers:
   - ''
   - {type: held}
   - ''
-  AltGr L:
+  AltGr l:
   - '&circ'
   - \
   - Sft+\
@@ -222,7 +222,7 @@ layers:
   - ''
   - ''
   - {type: held}
-  AltGr W:
+  AltGr w:
   - '&circ'
   - \
   - Sft+\
@@ -447,40 +447,40 @@ layers:
 combos:
 - p: [10, 19]
   k: CAPSLOCK
-  l: [Linux]
+  l: [linux]
 - p: [10, 11, 12]
   k: Alt+↹
-  l: [Linux]
+  l: [linux]
 - p: [0, 10]
   k: '~'
-  l: [Linux]
+  l: [linux]
 - p: [21, 22]
   k: Cut
-  l: [Linux]
+  l: [linux]
 - p: [22, 23]
   k: Copy
-  l: [Linux]
+  l: [linux]
 - p: [23, 24]
   k: Paste
-  l: [Linux]
+  l: [linux]
 - p: [9, 8]
   k: Snip Img
-  l: [Linux]
+  l: [linux]
 - p: [27, 28]
   k: ;
-  l: [Linux]
+  l: [linux]
 - p: [18, 19]
   k: '-'
-  l: [Linux]
+  l: [linux]
 - p: [0, 4, 32]
   k: Boot
-  l: [Linux]
+  l: [linux]
 - p: [0, 1, 2]
   k: Win Close
-  l: [Linux]
+  l: [linux]
 - p: [0, 1]
   k: ESCAPE
-  l: [Linux]
+  l: [linux]
 - p: [32, 33]
   k: Media
 - p: [16, 17]
@@ -515,8 +515,8 @@ combos:
 - p: [14, 15]
   k: {t: Mouse, h: toggle}
 - p: [33, 34]
-  k: {t: Windows, h: toggle}
-  l: [Linux]
+  k: {t: windows, h: toggle}
+  l: [linux]
 - p: [33, 34]
-  k: {t: Linux, h: toggle}
-  l: [Windows]
+  k: {t: linux, h: toggle}
+  l: [windows]
