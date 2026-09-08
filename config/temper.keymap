@@ -578,7 +578,8 @@
         compatible = "zmk,keymap";
 
         Basel {
-//            display-name = "Base";
+            //            display-name = "Base";
+
             bindings = <
   &kp A            &kp C           &kp O               &kp P            &kp Z                 &kp J        &kp SEMICOLON  &kp D                &accent_layer_linux  &kp Y
   &hml LEFT_GUI Q  &hm LEFT_ALT S  &hm LEFT_CONTROL E  &kp N            &kp F                 &kp L        &kp R          &hm RIGHT_CONTROL T  &hm RIGHT_ALT I      &hmr RIGHT_GUI U
@@ -586,12 +587,14 @@
                                    &lt 8 ESCAPE        &lt 7 BACKSPACE  &hm LEFT_SHIFT TAB    &lt 9 ENTER  &lt 4 SPACE    &lt 5 DEL
             >;
 
-            label = "Linux";
+            label = "linux";
         };
 
         Basew {
-            label = "Windows";
-//            display-name = "Base";
+            label = "windows";
+
+            //            display-name = "Base";
+
             bindings = <
   &kp A            &kp C           &kp O               &kp P            &kp Z                 &kp J        &kp SEMICOLON  &kp D                &accent_layer_windows  &kp Y
   &hml LEFT_GUI Q  &hm LEFT_ALT S  &hm LEFT_CONTROL E  &kp N            &kp F                 &kp L        &kp R          &hm RIGHT_CONTROL T  &hm RIGHT_ALT I        &hmr RIGHT_GUI U
@@ -608,11 +611,11 @@
                                             &none               &none                &kp LEFT_SHIFT    &none   &typographical_apo_linux  &none
             >;
 
-            label = "Acnts L";
+            label = "Accts lnx";
         };
 
         AccentsW {
-            label = "Acnts W";
+            label = "Accts win";
             bindings = <
   &a_circ_windows       &c_cedilla_windows  &oe_ligature_windows  &o_circ_upper_lower  &none             &none   &none                       &kp N8   &none        &u_circ
   &a_acute              &e_acute_windows    &e_grave              &e_circ              &none             &kp N5  &kp MINUS                   &i_circ  &i_diaresis  &u_grave
@@ -640,11 +643,11 @@
                                           &none                     &none              &none               &none             &none         &none
             >;
 
-            label = "AltGr L";
+            label = "AltGr l";
         };
 
         AltGrW {
-            label = "AltGr W";
+            label = "AltGr w";
             bindings = <
   &circ             &kp NON_US_BACKSLASH  &kp LS(NON_US_BACKSLASH)  &kp RIGHT_BRACKET  &kp LS(APOS)        &kp RA(N0)        &kp NUMBER_1  &kp KP_MULTIPLY  &kp NUMBER_4  &back_tick
   &kp RA(NUMBER_4)  &kp N5                &kp MINUS                 &kp RA(EQUAL)      &kp EQUAL           &kp RA(N8)        &kp KP_PLUS   &kp NUMBER_6     &kp LS(DOT)   &kp NUMBER_3
