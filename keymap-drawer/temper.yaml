@@ -37,7 +37,7 @@ layers:
   - {t: ⏎, h: Funct}
   - {t: ␣, h: Nav}
   - {t: ⌦, h: AltGr L}
-  Base:
+  Windows:
   - A
   - C
   - O
@@ -515,8 +515,8 @@ combos:
 - p: [14, 15]
   k: {t: Mouse, h: toggle}
 - p: [33, 34]
-  k: {t: Base, h: toggle}
+  k: {t: Windows, h: toggle}
   l: [Linux]
 - p: [33, 34]
   k: {t: Linux, h: toggle}
-  l: [Base]
+  l: [Windows]
