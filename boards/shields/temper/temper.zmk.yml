@@ -1,6 +1,6 @@
 file_format: "1"
 id: temper
-name: Kristof Temper
+name: Kristof_Temper
 type: shield
 url: https://github.com/Sifan6688/Temper_zmk
 requires: [pro_micro]
@@ -8,7 +8,7 @@ exposes: [i2c_oled]
 features:
   - keys
   - display
-  - underglow
+#  - underglow
 siblings:
   - temper_left
   - temper_right
