@@ -608,7 +608,7 @@
   &a_circ_linux             &kp RA(R)       &oe_ligature_linux  &o_circ_upper_lower  &none             &none   &none                     &kp N8   &none        &u_circ
   &a_acute                  &e_acute_linux  &e_grave            &e_circ              &none             &kp N5  &kp MINUS                 &i_circ  &i_diaresis  &u_grave
   &ae_ligature_linux_lower  &none           &none               &none                &none             &none   &none                     &none    &none        &none
-                                            &none               &none                &kp LEFT_SHIFT    &none   &typographical_apo_linux  &none
+                                            &none               &none                &sk LEFT_SHIFT    &none   &typographical_apo_linux  &none
             >;
 
             label = "Accts lnx";
@@ -620,7 +620,7 @@
   &a_circ_windows       &c_cedilla_windows  &oe_ligature_windows  &o_circ_upper_lower  &none             &none   &none                       &kp N8   &none        &u_circ
   &a_acute              &e_acute_windows    &e_grave              &e_circ              &none             &kp N5  &kp MINUS                   &i_circ  &i_diaresis  &u_grave
   &ae_ligature_windows  &none               &none                 &none                &none             &none   &none                       &none    &none        &none
-                                            &none                 &none                &kp LEFT_SHIFT    &none   &typographical_apo_windows  &none
+                                            &none                 &none                &sk LEFT_SHIFT    &none   &typographical_apo_windows  &none
             >;
         };
 
