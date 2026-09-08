@@ -107,7 +107,7 @@ layers:
   - ''
   - ''
   - ''
-  - Shift
+  - {t: Shift, h: sticky}
   - ''
   - '&typographical_apo_linux'
   - ''
@@ -144,7 +144,7 @@ layers:
   - ''
   - ''
   - ''
-  - Shift
+  - {t: Shift, h: sticky}
   - ''
   - '&typographical_apo_windows'
   - ''
