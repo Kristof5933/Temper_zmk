@@ -9,7 +9,7 @@ layers:
   - J
   - ;
   - D
-  - {t: Acnts L, h: sticky}
+  - {t: Acnts L, h: sticky, s: /}
   - Y
   - {t: Q, h: Win}
   - {t: S, h: Alt}
@@ -46,7 +46,7 @@ layers:
   - J
   - ;
   - D
-  - {t: Acnts W, h: sticky}
+  - {t: Acnts W, h: sticky, s: /}
   - Y
   - {t: Q, h: Win}
   - {t: S, h: Alt}
@@ -85,16 +85,16 @@ layers:
   - '8'
   - {type: held}
   - '&u_circ'
-  - '0'
-  - '2'
-  - '7'
+  - {t: '0', s: '&a_acute_upper'}
+  - {t: '2', s: '&e_acute_upper_linux'}
+  - {t: '7', s: '&e_grave_upper'}
   - '&e_circ'
   - ''
   - '5'
   - '-'
   - '&i_circ'
   - '&i_diaresis'
-  - ''''
+  - {t: '''', s: '&u_grave_upper'}
   - '&ae_ligature_linux'
   - ''
   - ''
@@ -109,7 +109,7 @@ layers:
   - ''
   - ''
   - ''
-  - '4'
+  - '&typographical_apo_linux'
   - ''
   Acnts W:
   - {t: '&a_circ_windows_lower', s: '&a_circ_windows_upper'}
@@ -122,16 +122,16 @@ layers:
   - '8'
   - {type: held}
   - '&u_circ'
-  - '0'
-  - '2'
-  - '7'
+  - {t: '0', s: '&a_acute_upper'}
+  - {t: '2', s: '&e_acute_upper_windows'}
+  - {t: '7', s: '&e_grave_upper'}
   - '&e_circ'
   - ''
   - '5'
   - '-'
   - '&i_circ'
   - '&i_diaresis'
-  - ''''
+  - {t: '''', s: '&u_grave_upper'}
   - '&ae_ligature_windows'
   - ''
   - ''
@@ -146,7 +146,7 @@ layers:
   - ''
   - ''
   - ''
-  - '4'
+  - '&typographical_apo_windows'
   - ''
   Nav:
   - Boot
