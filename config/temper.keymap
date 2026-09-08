@@ -167,6 +167,69 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        a_acute: a_acute {
+            compatible = "zmk,behavior-mod-morph";
+            label = "A_ACUTE";
+            bindings = <&kp N0>, <&a_acute_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        e_acute_windows: e_acute_windows {
+            compatible = "zmk,behavior-mod-morph";
+            label = "E_ACUTE_WINDOWS";
+            bindings = <&kp NUMBER_2>, <&e_acute_upper_windows>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        e_acute_linux: e_acute_linux {
+            compatible = "zmk,behavior-mod-morph";
+            label = "E_ACUTE_LINUX";
+            bindings = <&kp NUMBER_2>, <&e_acute_upper_linux>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        e_grave: e_grave {
+            compatible = "zmk,behavior-mod-morph";
+            label = "E_GRAVE";
+            bindings = <&kp N7>, <&e_grave_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        u_grave: u_grave {
+            compatible = "zmk,behavior-mod-morph";
+            label = "U_GRAVE";
+            bindings = <&kp SINGLE_QUOTE>, <&u_grave_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        accent_layer_linux: accent_layer_linux {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ACCENT_LAYER_LINUX";
+            bindings = <&sl 2>, <&kp SLASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        accent_layer_windows: accent_layer_windows {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ACCENT_LAYER_WINDOWS";
+            bindings = <&sl 3>, <&kp SLASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -444,6 +507,55 @@
             bindings = <&kt LEFT_ALT &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N9 &kt LEFT_ALT>;
             label = "C_CEDILLA_MAJ_WINDOWS";
         };
+
+        a_acute_upper: a_acute_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(N7) &kp A>;
+            label = "A_ACUTE_UPPER";
+        };
+
+        e_acute_upper_linux: e_acute_upper_linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(U)) &kp KP_N0 &kp KP_N0 &kp C &kp KP_N9 &kp ENTER>;
+            label = "E_ACUTE_UPPER_LINUX";
+        };
+
+        e_acute_upper_windows: a_acute_upper_windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N1 &kt LEFT_ALT>;
+            label = "A_ACUTE_UPPER_WINDOWS";
+        };
+
+        e_grave_upper: e_grave_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(N7) &kp LS(E)>;
+            label = "E_GRAVE_UPPER";
+        };
+
+        u_grave_upper: u_grave_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(N7) &kp LS(U)>;
+            label = "U_GRAVE_UPPER";
+        };
+
+        typographical_apo_linux: typographical_apo_linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(U)) &kp KP_N2 &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp ENTER>;
+            label = "TYPOGRAPHICAL_APO_LINUX";
+        };
+
+        typographical_apo_windows: typographical_apo_windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N6 &kt LEFT_ALT>;
+            label = "TYPOGRAPHICAL_APO_WINDOWS";
+        };
     };
 
     keymap {
@@ -452,9 +564,9 @@
         Basel {
             display-name = "Base";
             bindings = <
-  &kp A            &kp C           &kp O               &kp P            &kp Z                 &kp J        &kp SEMICOLON  &kp D                &sl 2             &kp Y
-  &hml LEFT_GUI Q  &hm LEFT_ALT S  &hm LEFT_CONTROL E  &kp N            &kp F                 &kp L        &kp R          &hm RIGHT_CONTROL T  &hm RIGHT_ALT I   &hmr RIGHT_GUI U
-  &kp W            &kp X           &dash_question      &kp V            &kp B                 &dot_colon   &kp H          &kp G                &comma_semicolon  &kp K
+  &kp A            &kp C           &kp O               &kp P            &kp Z                 &kp J        &kp SEMICOLON  &kp D                &accent_layer_linux  &kp Y
+  &hml LEFT_GUI Q  &hm LEFT_ALT S  &hm LEFT_CONTROL E  &kp N            &kp F                 &kp L        &kp R          &hm RIGHT_CONTROL T  &hm RIGHT_ALT I      &hmr RIGHT_GUI U
+  &kp W            &kp X           &dash_question      &kp V            &kp B                 &dot_colon   &kp H          &kp G                &comma_semicolon     &kp K
                                    &lt 8 ESCAPE        &lt 7 BACKSPACE  &hm LEFT_SHIFT TAB    &lt 9 ENTER  &lt 4 SPACE    &lt 5 DEL
             >;
 
@@ -465,19 +577,19 @@
             label = "Windows";
             display-name = "Base";
             bindings = <
-  &kp A            &kp C           &kp O               &kp P            &kp Z                 &kp J        &kp SEMICOLON  &kp D                &sl 3             &kp Y
-  &hml LEFT_GUI Q  &hm LEFT_ALT S  &hm LEFT_CONTROL E  &kp N            &kp F                 &kp L        &kp R          &hm RIGHT_CONTROL T  &hm RIGHT_ALT I   &hmr RIGHT_GUI U
-  &kp W            &kp X           &dash_question      &kp V            &kp B                 &dot_colon   &kp H          &kp G                &comma_semicolon  &kp K
+  &kp A            &kp C           &kp O               &kp P            &kp Z                 &kp J        &kp SEMICOLON  &kp D                &accent_layer_windows  &kp Y
+  &hml LEFT_GUI Q  &hm LEFT_ALT S  &hm LEFT_CONTROL E  &kp N            &kp F                 &kp L        &kp R          &hm RIGHT_CONTROL T  &hm RIGHT_ALT I        &hmr RIGHT_GUI U
+  &kp W            &kp X           &dash_question      &kp V            &kp B                 &dot_colon   &kp H          &kp G                &comma_semicolon       &kp K
                                    &lt 8 ESCAPE        &lt 7 BACKSPACE  &hm LEFT_SHIFT TAB    &lt 9 ENTER  &lt 4 SPACE    &lt 6 DEL
             >;
         };
 
         AccentsL {
             bindings = <
-  &a_circ_linux       &kp RA(R)     &kp GRAVE  &o_circ_upper_lower  &none    &none   &none         &kp N8   &none        &u_circ
-  &kp N0              &kp NUMBER_2  &kp N7     &e_circ              &none    &kp N5  &kp MINUS     &i_circ  &i_diaresis  &kp SINGLE_QUOTE
-  &ae_ligature_linux  &none         &none      &none                &none    &none   &none         &none    &none        &none
-                                    &none      &none                &none    &none   &kp NUMBER_4  &none
+  &a_circ_linux       &kp RA(R)       &kp GRAVE  &o_circ_upper_lower  &none    &none   &none                     &kp N8   &none        &u_circ
+  &a_acute            &e_acute_linux  &e_grave   &e_circ              &none    &kp N5  &kp MINUS                 &i_circ  &i_diaresis  &u_grave
+  &ae_ligature_linux  &none           &none      &none                &none    &none   &none                     &none    &none        &none
+                                      &none      &none                &none    &none   &typographical_apo_linux  &none
             >;
 
             label = "Acnts L";
@@ -486,10 +598,10 @@
         AccentsW {
             label = "Acnts W";
             bindings = <
-  &a_circ_windows       &c_cedilla_windows  &oe_ligature_windows  &o_circ_upper_lower  &none    &none   &none         &kp N8   &none        &u_circ
-  &kp N0                &kp NUMBER_2        &kp N7                &e_circ              &none    &kp N5  &kp MINUS     &i_circ  &i_diaresis  &kp SINGLE_QUOTE
-  &ae_ligature_windows  &none               &none                 &none                &none    &none   &none         &none    &none        &none
-                                            &none                 &none                &none    &none   &kp NUMBER_4  &none
+  &a_circ_windows       &c_cedilla_windows  &oe_ligature_windows  &o_circ_upper_lower  &none    &none   &none                       &kp N8   &none        &u_circ
+  &a_acute              &e_acute_windows    &e_grave              &e_circ              &none    &kp N5  &kp MINUS                   &i_circ  &i_diaresis  &u_grave
+  &ae_ligature_windows  &none               &none                 &none                &none    &none   &none                       &none    &none        &none
+                                            &none                 &none                &none    &none   &typographical_apo_windows  &none
             >;
         };
 
