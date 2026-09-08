@@ -578,7 +578,7 @@
         compatible = "zmk,keymap";
 
         Basel {
-            display-name = "Base";
+//            display-name = "Base";
             bindings = <
   &kp A            &kp C           &kp O               &kp P            &kp Z                 &kp J        &kp SEMICOLON  &kp D                &accent_layer_linux  &kp Y
   &hml LEFT_GUI Q  &hm LEFT_ALT S  &hm LEFT_CONTROL E  &kp N            &kp F                 &kp L        &kp R          &hm RIGHT_CONTROL T  &hm RIGHT_ALT I      &hmr RIGHT_GUI U
@@ -591,7 +591,7 @@
 
         Basew {
             label = "Windows";
-            display-name = "Base";
+//            display-name = "Base";
             bindings = <
   &kp A            &kp C           &kp O               &kp P            &kp Z                 &kp J        &kp SEMICOLON  &kp D                &accent_layer_windows  &kp Y
   &hml LEFT_GUI Q  &hm LEFT_ALT S  &hm LEFT_CONTROL E  &kp N            &kp F                 &kp L        &kp R          &hm RIGHT_CONTROL T  &hm RIGHT_ALT I        &hmr RIGHT_GUI U
