@@ -78,7 +78,7 @@ layers:
   - {t: '&a_circ_linux_lower', s: '&a_circ_linux_upper'}
   - {t: '&c_cedilla_linux_lower', s: '&c_cedilla_linux_upper'}
   - {t: '&oe_ligature_linux_lower', s: '&oe_ligature_linux_upper'}
-  - '&o_circ_linuix'
+  - {t: '&o_circ_lower_linux', s: '&o_circ_upper_linux'}
   - ''
   - ''
   - ''
