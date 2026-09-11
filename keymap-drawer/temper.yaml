@@ -85,7 +85,7 @@ layers:
   - '8'
   - ''
   - '&u_circ'
-  - {t: '0', s: '&a_acute_upper'}
+  - {t: '&a_acute_lower_linux', s: '&a_acute_upper_linux'}
   - {t: '2', s: '&e_acute_upper_linux'}
   - {t: '7', s: '&e_grave_upper'}
   - '&e_circ'
