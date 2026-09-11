@@ -114,10 +114,28 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        comma_semicolon: comma_semicolon {
+        comma_semicolon: comma_semicolon { 
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_SEMICOLON";
             bindings = <&kp M>, <&kp COMMA>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        a_circ_linux: a_circ_linux {
+            compatible = "zmk,behavior-mod-morph";
+            label = "A_CIRC_LINUX";
+            bindings = <&a_circ_linux_lower>, <&a_circ_linux_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        c_cedilla_linux: a_circ_linux {
+            compatible = "zmk,behavior-mod-morph";
+            label = "C_CEDILLA_LINUX";
+            bindings = <&c_cedilla_linux_lower>, <&c_cedilla_linux_upper>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -136,15 +154,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "DASH_QUESTION";
             bindings = <&kp NUMBER_6>, <&kp LS(M)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        a_circ_linux: a_circ_linux {
-            compatible = "zmk,behavior-mod-morph";
-            label = "A_CIRC_LINUX";
-            bindings = <&a_circ_linux_lower>, <&a_circ_linux_upper>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -258,8 +267,7 @@
             key-positions = <10 19>;
             layers = <0>;
         };
-
-        Alt+tab {
+       Alt+tab {
             bindings = <&kp LA(TAB)>;
             key-positions = <10 11 12>;
             layers = <0>;
@@ -426,6 +434,20 @@
             #binding-cells = <0>;
             bindings = <&kp RA(A) &to 0>;
             label = "A_CIRC_LINUX_UPPER";
+        };
+
+        c_cedilla_linux_lower: c_cedilla_linux_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(R) &to 0>;
+            label = "C_CEDILLA_LINUX_LOWER";
+        };
+
+        c_cedilla_linux_upper: c_cedilla_linux_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(LS(R)) &to 0>;
+            label = "C_CEDILLA_LINUX_UPPER";
         };
 
         a_circ_windows_lower: a_circ {
@@ -642,10 +664,10 @@
 
         AccentsL {
             bindings = <
-  &a_circ_linux             &kp RA(R)       &oe_ligature_upper_lower_linux  &o_circ_upper_lower_linux  &none             &none   &none                     &kp N8   &none        &u_circ
-  &a_acute                  &e_acute_linux  &e_grave                        &e_circ                    &none             &kp N5  &kp MINUS                 &i_circ  &i_diaresis  &u_grave
-  &ae_ligature_linux_lower  &none           &none                           &none                      &none             &none   &none                     &none    &none        &none
-                                            &none                           &none                      &kp LEFT_SHIFT    &none   &typographical_apo_linux  &none
+  &a_circ_linux             &c_cedilla_linux   &oe_ligature_upper_lower_linux  &o_circ_upper_lower_linux  &none             &none   &none                     &kp N8   &none        &u_circ
+  &a_acute                  &e_acute_linux     &e_grave                        &e_circ                    &none             &kp N5  &kp MINUS                 &i_circ  &i_diaresis  &u_grave
+  &ae_ligature_linux_lower  &none              &none                           &none                      &none             &none   &none                     &none    &none        &none
+                                               &none                           &none                      &kp LEFT_SHIFT    &none   &typographical_apo_linux  &none
             >;
 
             label = "Accts lnx";
