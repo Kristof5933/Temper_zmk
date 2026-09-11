@@ -76,9 +76,9 @@ layers:
   - {t: ⌦, h: AltGr w}
   Accts lnx:
   - {t: AltGr+Q, s: AltGr+A}
-  - AltGr+R
+  - '&c_cedilla_linux'
   - {t: '&oe_ligature_linux_lower', s: '&oe_ligature_linux_upper'}
-  - {t: '&o_circ_linux', s: '&o_circ_upper_linux'}
+  - {t: '&o_circ_lower_linux', s: '&o_circ_upper_linux'}
   - ''
   - ''
   - ''
