@@ -609,20 +609,6 @@
             bindings = <&kp LEFT_BRACKET &kp LS(O)>;
             label = "O_CIRC_UPPER_LINUX";
         };
-
-        a_circ_linux_lower: a_circ_linux_lower {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RA(Q) &to 0>;
-            label = "A_CIRC_LINUX_LOWER";
-        };
-
-        a_circ_linux_upper: a_circ_linux_upper {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RA(A) &to 0>;
-            label = "A_CIRC_LINUX_UPPER";
-        };
     };
 
     keymap {
