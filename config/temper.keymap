@@ -546,21 +546,21 @@
         e_grave_upper_linux: e_grave_upper_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(RS(NUMBER_7)) &to 0>;
+            bindings = <&kp RA(RS(NUMBER_7)) &to 0>;
             label = "E_GRAVE_UPPER_LINUX";
         };
 
         e_circ_lower_linux: e_circ_lower_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp NUMBER_7 &to 0>;
+            bindings = <&kp RA(RIGHT_BRACKET) &to 0>;
             label = "E_GRAVE_LOWER_LINUX";
         };
 
         e_circ_upper_linux: e_circ_upper_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(RS(NUMBER_7)) &to 0>;
+            bindings = <&kp LA(D) &to 0>;
             label = "E_GRAVE_UPPER_LINUX";
         };
 
