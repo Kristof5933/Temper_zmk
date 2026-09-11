@@ -132,10 +132,19 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        c_cedilla_linux: a_circ_linux {
+        c_cedilla_linux: c_cedilla_linux {
             compatible = "zmk,behavior-mod-morph";
             label = "C_CEDILLA_LINUX";
             bindings = <&c_cedilla_linux_lower>, <&c_cedilla_linux_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        oe_ligature_linux: oe_ligature_linux {
+            compatible = "zmk,behavior-mod-morph";
+            label = "OE_LIGATURE_LINUX";
+            bindings = <&oe_ligature_linux_lower>, <&oe_ligature_linux_upper>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -240,14 +249,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        oe_ligature_upper_lower_linux: oe_ligature_upper_lower_linux {
-            compatible = "zmk,behavior-mod-morph";
-            label = "OE_LIGATURE_UPPER_LOWER_LINUX";
-            bindings = <&oe_ligature_linux_lower>, <&oe_ligature_linux_upper>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
 
         o_circ_upper_lower_linux: o_circ_upper_lower_linux {
             compatible = "zmk,behavior-mod-morph";
@@ -450,18 +451,25 @@
             label = "C_CEDILLA_LINUX_UPPER";
         };
 
+        oe_ligature_linux_lower: oe_ligature_linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N5 &kp N3 &kp ENTER &to 0>;
+            label = "OE_LIGATURE_LINUX_LOWER";
+        };
+
+        oe_ligature_linux_upper: oe_ligature_linux_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N5 &kp N2 &kp ENTER &to 0>;
+            label = "OE_LIGATURE_LINUX_UPPER";
+        };
+
         a_circ_windows_lower: a_circ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET &kp Q>;
             label = "A_CIRC";
-        };
-
-        oe_ligature_linux_lower: oe_ligature_linux {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N5 &kp N3 &kp ENTER &to 0>;
-            label = "OE_LIGATURE_LINUX";
         };
 
         o_circ_windows: o_circ {
@@ -609,13 +617,6 @@
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N6 &kt LEFT_ALT>;
             label = "TYPOGRAPHICAL_APO_WINDOWS";
-        };
-
-        oe_ligature_linux_upper: oe_ligature_linux_upper {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N5 &kp KP_N2 &kp ENTER &to 0>;
-            label = "OE_LIGATURE_LINUX_UPPER";
         };
 
         o_circ_linux: o_circ_linux {
