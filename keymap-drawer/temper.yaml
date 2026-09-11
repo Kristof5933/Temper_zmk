@@ -9,7 +9,7 @@ layers:
   - J
   - ;
   - D
-  - {t: Accts lnx, h: sticky, s: /}
+  - {t: Accts lnx, h: toggle, s: /}
   - Y
   - {t: Q, h: Win}
   - {t: S, h: Alt}
@@ -78,12 +78,12 @@ layers:
   - {t: AltGr+Q, s: AltGr+A}
   - AltGr+R
   - {t: '&oe_ligature_linux_lower', s: '&oe_ligature_linux_upper'}
-  - {t: '&o_circ', s: '&o_circ_upper'}
+  - {t: '&o_circ_linux', s: '&o_circ_upper_linux'}
   - ''
   - ''
   - ''
   - '8'
-  - {type: held}
+  - ''
   - '&u_circ'
   - {t: '0', s: '&a_acute_upper'}
   - {t: '2', s: '&e_acute_upper_linux'}
@@ -107,7 +107,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: Shift, h: sticky}
+  - Shift
   - ''
   - '&typographical_apo_linux'
   - ''
@@ -115,7 +115,7 @@ layers:
   - {t: '&a_circ_windows_lower', s: '&a_circ_windows_upper'}
   - {t: '9', s: '&c_cedilla_windows_upper'}
   - '&oe_ligature_windows'
-  - {t: '&o_circ', s: '&o_circ_upper'}
+  - {t: '&o_circ_windows', s: '&o_circ_upper_windows'}
   - ''
   - ''
   - ''
