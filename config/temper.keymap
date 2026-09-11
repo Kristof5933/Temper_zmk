@@ -417,16 +417,16 @@
         a_circ_linux_lower: a_circ_linux_lower {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bidings = <&kp RA(Q)> &to 0>;
+            bidings = <&kp RA(Q) &to 0>;
             label = "A_CIRC_LINUX_LOWER";
-        } 
+        };
 
         a_circ_linux_upper: a_circ_linux_upper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bidings = <&kp RA(A)> &to 0>;
+            bidings = <&kp RA(A) &to 0>;
             label = "A_CIRC_LINUX_UPPER";
-        } 
+        };
 
         a_circ_windows_lower: a_circ {
             compatible = "zmk,behavior-macro";
