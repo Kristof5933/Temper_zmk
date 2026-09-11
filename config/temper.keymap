@@ -123,91 +123,10 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        o_circ_upper_lower_windows: o_circ_upper_lower_windows {
-            compatible = "zmk,behavior-mod-morph";
-            label = "O_CIRC_UPPER_LOWER_WINDOWS";
-            bindings = <&o_circ_windows>, <&o_circ_upper_windows>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
         dash_question: dash_question {
             compatible = "zmk,behavior-mod-morph";
             label = "DASH_QUESTION";
             bindings = <&kp NUMBER_6>, <&kp LS(M)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        a_circ_linux: a_circ_linux {
-            compatible = "zmk,behavior-mod-morph";
-            label = "A_CIRC_LINUX";
-            bindings = <&kp RA(Q)>, <&kp RA(A)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        a_circ_windows: a_circ_windows {
-            compatible = "zmk,behavior-mod-morph";
-            label = "A_CIRC_WINDOWS";
-            bindings = <&a_circ_windows_lower>, <&a_circ_windows_upper>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        c_cedilla_windows: c_cedilla_windows {
-            compatible = "zmk,behavior-mod-morph";
-            label = "C_CEDILLA_WINDOWS";
-            bindings = <&kp N9>, <&c_cedilla_windows_upper>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        a_acute: a_acute {
-            compatible = "zmk,behavior-mod-morph";
-            label = "A_ACUTE";
-            bindings = <&kp N0>, <&a_acute_upper>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        e_acute_windows: e_acute_windows {
-            compatible = "zmk,behavior-mod-morph";
-            label = "E_ACUTE_WINDOWS";
-            bindings = <&kp NUMBER_2>, <&e_acute_upper_windows>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        e_acute_linux: e_acute_linux {
-            compatible = "zmk,behavior-mod-morph";
-            label = "E_ACUTE_LINUX";
-            bindings = <&kp NUMBER_2>, <&e_acute_upper_linux>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        e_grave: e_grave {
-            compatible = "zmk,behavior-mod-morph";
-            label = "E_GRAVE";
-            bindings = <&kp N7>, <&e_grave_upper>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        u_grave: u_grave {
-            compatible = "zmk,behavior-mod-morph";
-            label = "U_GRAVE";
-            bindings = <&kp SINGLE_QUOTE>, <&u_grave_upper>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -231,19 +150,100 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        oe_ligature_upper_lower_linux: oe_ligature_upper_lower_linux {
+        a_acute: a_acute {
             compatible = "zmk,behavior-mod-morph";
-            label = "OE_LIGATURE_UPPER_LOWER_LINUX";
+            label = "A_ACUTE";
+            bindings = <&kp N0>, <&a_acute_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        a_circ_linux: a_circ_linux {
+            compatible = "zmk,behavior-mod-morph";
+            label = "A_CIRC_LINUX";
+            bindings = <&kp RA(Q)>, <&kp RA(A)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        e_acute_linux: e_acute_linux {
+            compatible = "zmk,behavior-mod-morph";
+            label = "E_ACUTE_LINUX";
+            bindings = <&kp NUMBER_2>, <&e_acute_upper_linux>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        oe_ligature_linux: oe_ligature_linux {
+            compatible = "zmk,behavior-mod-morph";
+            label = "OE_LIGATURE_LINUX";
             bindings = <&oe_ligature_linux_lower>, <&oe_ligature_linux_upper>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        o_circ_upper_lower_linux: o_circ_upper_lower_linux {
+        o_circ_linux: o_circ_linux {
             compatible = "zmk,behavior-mod-morph";
-            label = "O_CIRC_UPPER_LOWER_LINUX";
-            bindings = <&o_circ_linux>, <&o_circ_upper_linux>;
+            label = "O_CIRC_LINUX";
+            bindings = <&o_circ_lower_linux>, <&o_circ_upper_linux>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        a_circ_windows: a_circ_windows {
+            compatible = "zmk,behavior-mod-morph";
+            label = "A_CIRC_WINDOWS";
+            bindings = <&a_circ_windows_lower>, <&a_circ_windows_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        c_cedilla_windows: c_cedilla_windows {
+            compatible = "zmk,behavior-mod-morph";
+            label = "C_CEDILLA_WINDOWS";
+            bindings = <&kp N9>, <&c_cedilla_windows_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        o_circ_upper_lower_windows: o_circ_upper_lower_windows {
+            compatible = "zmk,behavior-mod-morph";
+            label = "O_CIRC_UPPER_LOWER_WINDOWS";
+            bindings = <&o_circ_windows>, <&o_circ_upper_windows>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        e_acute_windows: e_acute_windows {
+            compatible = "zmk,behavior-mod-morph";
+            label = "E_ACUTE_WINDOWS";
+            bindings = <&kp NUMBER_2>, <&e_acute_upper_windows>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        e_grave: e_grave {
+            compatible = "zmk,behavior-mod-morph";
+            label = "E_GRAVE";
+            bindings = <&kp N7>, <&e_grave_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        u_grave: u_grave {
+            compatible = "zmk,behavior-mod-morph";
+            label = "U_GRAVE";
+            bindings = <&kp SINGLE_QUOTE>, <&u_grave_upper>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -414,11 +414,25 @@
     };
 
     macros {
-        a_circ_windows_lower: a_circ {
+        a_circ_linux_lower: a_circ_linux_lower {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp Q>;
-            label = "A_CIRC";
+            bindings = <&kp RA(Q) &to 0>;
+            label = "A_CIRC_LINUX_LOWER";
+        };
+
+        a_circ_linux_upper: a_circ_linux_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(A) &to 0>;
+            label = "A_CIRC_LINUX_UPPER";
+        };
+
+        c_cedilla_linux: c_cedilla_linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <RA(R) &to 0>;
+            label = "C_CEDILLA_LINUX";
         };
 
         oe_ligature_linux_lower: oe_ligature_linux {
@@ -428,6 +442,62 @@
             label = "OE_LIGATURE_LINUX";
         };
 
+        oe_ligature_linux_upper: oe_ligature_linux_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N5 &kp N2 &kp ENTER &to 0>;
+            label = "OE_LIGATURE_LINUX_UPPER";
+        };
+
+        o_circ_lower_linux: o_circ_lower_linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp O &to 0>;
+            label = "O_CIRC_LOWER_LINUX";
+        };
+
+        o_circ_upper_linux: o_circ_upper_linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp LS(O) &to 0>;
+            label = "O_CIRC_UPPER_LINUX";
+        };
+
+        ae_ligature_linux_lower: ae_ligature_linux_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(G) &to 0>;
+            label = "AE_LIGATURE_LINUX_LOWER";
+        };
+
+        ae_ligature_linux_upper: ae_ligature_linux_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(LS(G)) &to 0>;
+            label = "AE_LIGATURE_LINUX_UPPER";
+        };
+
+        e_acute_upper_linux: e_acute_upper_linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(U)) &kp KP_N0 &kp KP_N0 &kp C &kp KP_N9 &kp ENTER &to 0>;
+            label = "E_ACUTE_UPPER_LINUX";
+        };
+
+        typographical_apo_linux: typographical_apo_linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(U)) &kp KP_N2 &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp ENTER &to 0>;
+            label = "TYPOGRAPHICAL_APO_LINUX";
+        };
+
+        a_circ_windows_lower: a_circ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp Q>;
+            label = "A_CIRC";
+        };
+
         o_circ_windows: o_circ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -435,60 +505,11 @@
             label = "O_CIRC";
         };
 
-        e_circ: e_circ {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp E>;
-            label = "E_CIRC";
-        };
-
-        ae_ligature_linux_lower: ae_ligature {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp E &kp N6 &kp RET &to 0>;
-            label = "AE_LIGATURE";
-        };
-
-        i_circ: i_circ {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp I>;
-            label = "I_CIRC";
-        };
-
-        i_diaresis: i_diaresis {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LEFT_BRACKET) &kp I>;
-            label = "I_DIARESIS";
-        };
-
-        u_circ: u_circ {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp U>;
-            label = "U_CIRC";
-        };
-
         o_circ_upper_windows: o_circ_maj {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET &kp LS(O)>;
             label = "O_CIRC_MAJ";
-        };
-
-        circ: circ {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp SPACE>;
-            label = "CIRC";
-        };
-
-        back_tick: back_tick {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RA(N7) &kp SPACE>;
-            label = "BACK_TICK";
         };
 
         oe_ligature_windows: oe_ligature_windows {
@@ -526,25 +547,60 @@
             label = "C_CEDILLA_MAJ_WINDOWS";
         };
 
-        a_acute_upper: a_acute_upper {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RA(N7) &kp A>;
-            label = "A_ACUTE_UPPER";
-        };
-
-        e_acute_upper_linux: e_acute_upper_linux {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp KP_N0 &kp KP_N0 &kp C &kp KP_N9 &kp ENTER &to 0>;
-            label = "E_ACUTE_UPPER_LINUX";
-        };
-
         e_acute_upper_windows: a_acute_upper_windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N1 &kt LEFT_ALT &to 0>;
             label = "A_ACUTE_UPPER_WINDOWS";
+        };
+
+        e_circ: e_circ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp E>;
+            label = "E_CIRC";
+        };
+
+        i_circ: i_circ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp I>;
+            label = "I_CIRC";
+        };
+
+        i_diaresis: i_diaresis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LEFT_BRACKET) &kp I>;
+            label = "I_DIARESIS";
+        };
+
+        u_circ: u_circ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp U>;
+            label = "U_CIRC";
+        };
+
+        circ: circ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp SPACE>;
+            label = "CIRC";
+        };
+
+        back_tick: back_tick {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(N7) &kp SPACE>;
+            label = "BACK_TICK";
+        };
+
+        a_acute_upper: a_acute_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(N7) &kp A>;
+            label = "A_ACUTE_UPPER";
         };
 
         e_grave_upper: e_grave_upper {
@@ -561,53 +617,11 @@
             label = "U_GRAVE_UPPER";
         };
 
-        typographical_apo_linux: typographical_apo_linux {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LC(U)) &kp KP_N2 &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp ENTER &to 0>;
-            label = "TYPOGRAPHICAL_APO_LINUX";
-        };
-
         typographical_apo_windows: typographical_apo_windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N6 &kt LEFT_ALT>;
             label = "TYPOGRAPHICAL_APO_WINDOWS";
-        };
-
-        oe_ligature_linux_upper: oe_ligature_linux_upper {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N5 &kp KP_N2 &kp ENTER &to 0>;
-            label = "OE_LIGATURE_LINUX_UPPER";
-        };
-
-        o_circ_linux: o_circ_linux {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp O &to 0>;
-            label = "O_CIRC_LINUX";
-        };
-
-        o_circ_upper_linux: o_circ_upper_linux {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp LS(O)>;
-            label = "O_CIRC_UPPER_LINUX";
-        };
-
-        a_circ_linux_lower: a_circ_linux_lower {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RA(Q) &to 0>;
-            label = "A_CIRC_LINUX_LOWER";
-        };
-
-        a_circ_linux_upper: a_circ_linux_upper {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RA(A) &to 0>;
-            label = "A_CIRC_LINUX_UPPER";
         };
     };
 
@@ -642,10 +656,10 @@
 
         AccentsL {
             bindings = <
-  &a_circ_linux             &kp RA(R)       &oe_ligature_upper_lower_linux  &o_circ_upper_lower_linux  &none             &none   &none                     &kp N8   &none        &u_circ
-  &a_acute                  &e_acute_linux  &e_grave                        &e_circ                    &none             &kp N5  &kp MINUS                 &i_circ  &i_diaresis  &u_grave
-  &ae_ligature_linux_lower  &none           &none                           &none                      &none             &none   &none                     &none    &none        &none
-                                            &none                           &none                      &kp LEFT_SHIFT    &none   &typographical_apo_linux  &none
+  &a_circ_linux             &c_cedilla_linux   &oe_ligature_linux              &o_circ_linux              &none             &none   &none                     &kp N8   &none        &u_circ
+  &a_acute                  &e_acute_linux     &e_grave                        &e_circ                    &none             &kp N5  &kp MINUS                 &i_circ  &i_diaresis  &u_grave
+  &ae_ligature_linux_lower  &none              &none                           &none                      &none             &none   &none                     &none    &none        &none
+                                               &none                           &none                      &kp LEFT_SHIFT    &none   &typographical_apo_linux  &none
             >;
 
             label = "Accts lnx";
