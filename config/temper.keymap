@@ -144,7 +144,7 @@
         a_circ_linux: a_circ_linux {
             compatible = "zmk,behavior-mod-morph";
             label = "A_CIRC_LINUX";
-            bindings = <&kp RA(Q)>, <&kp RA(A)>;
+            bindings = <&a_circ_linux_lower>, <&a_circ_linux_upper>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -414,6 +414,20 @@
     };
 
     macros {
+        a_circ_linux_lower: a_circ_linux_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bidings = <&kp RA(Q)> &to 0>;
+            label = "A_CIRC_LINUX_LOWER";
+        } 
+
+        a_circ_linux_upper: a_circ_linux_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bidings = <&kp RA(A)> &to 0>;
+            label = "A_CIRC_LINUX_UPPER";
+        } 
+
         a_circ_windows_lower: a_circ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
