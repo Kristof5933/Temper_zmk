@@ -85,10 +85,10 @@ layers:
   - '8'
   - ''
   - '&u_circ'
-  - {t: '&a_acute_lower_linux', s: '&a_acute_upper_linux'}
-  - {t: '2', s: '&e_acute_upper_linux'}
-  - {t: '7', s: '&e_grave_upper'}
-  - '&e_circ'
+  - {t: '&a_grave_lower_linux', s: '&a_grave_upper_linux'}
+  - {t: '&e_acute_lower_linux', s: '&e_acute_upper_linux'}
+  - {t: '&e_grave_lower_linux', s: '&e_grave_upper_linux'}
+  - {t: '&e_circ_lower_linux', s: '&e_circ_upper_linux'}
   - ''
   - '5'
   - '-'
@@ -122,7 +122,7 @@ layers:
   - '8'
   - {type: held}
   - '&u_circ'
-  - {t: '0', s: '&a_acute_upper'}
+  - {t: '0', s: '&a_grave_upper'}
   - {t: '2', s: '&e_acute_upper_windows'}
   - {t: '7', s: '&e_grave_upper'}
   - '&e_circ'
