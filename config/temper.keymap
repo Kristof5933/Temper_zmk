@@ -48,10 +48,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            quick-tap-ms = <65>;
-            tapping-term-ms = <125>;
+            quick-tap-ms = <175>;
+            tapping-term-ms = <280>;
             global-quick-tap;
-            flavor = "tap-preferred";
+            flavor = "balanced";
         };
 
         hml: hml {
@@ -158,6 +158,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        a_acute_linux: a_acute_linux {
+            compatible = "zmk,behavior-mod-morph";
+            label = "A_ACUTE_LINUX";
+            bindings = <&a_acute_lower_linux>, <&a_acute_upper_linux>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };        
 
         o_circ_upper_lower_windows: o_circ_upper_lower_windows {
             compatible = "zmk,behavior-mod-morph";
@@ -479,6 +488,20 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET &kp LS(O) &to 0>;
             label = "O_CIRC_UPPER_LINUX";
+        };
+
+        a_acute_lower_linux: a_acute_lower_linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(N7) &kp A>;
+            label = "A_ACUTE_LOWER_LINUX";
+        };
+
+        a_acute_upper_linux: a_acute_upper_linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(N7) &kp LS(A)>;
+            label = "A_ACUTE_UPPER_LINUX";
         };
 
         a_circ_windows_lower: a_circ {
