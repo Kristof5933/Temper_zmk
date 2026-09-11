@@ -77,8 +77,8 @@ layers:
   Accts lnx:
   - {t: '&a_circ_linux_lower', s: '&a_circ_linux_upper'}
   - {t: '&c_cedilla_linux_lower', s: '&c_cedilla_linux_upper'}
-  - '&oe_ligature_upper_lower_linux'
-  - {t: '&o_circ_linux', s: '&o_circ_upper_linux'}
+  - {t: '&oe_ligature_linux_lower', s: '&oe_ligature_linux_upper'}
+  - '&o_circ_linuix'
   - ''
   - ''
   - ''
