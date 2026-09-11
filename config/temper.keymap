@@ -231,9 +231,9 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        oe_ligature_linux: oe_ligature_linux {
+        oe_ligature_upper_lower_linux: oe_ligature_upper_lower_linux {
             compatible = "zmk,behavior-mod-morph";
-            label = "OE_LIGATURE_LINUX";
+            label = "OE_LIGATURE_UPPER_LOWER_LINUX";
             bindings = <&oe_ligature_linux_lower>, <&oe_ligature_linux_upper>;
 
             #binding-cells = <0>;
@@ -595,6 +595,20 @@
             bindings = <&kp LEFT_BRACKET &kp LS(O)>;
             label = "O_CIRC_UPPER_LINUX";
         };
+
+        a_circ_linux_lower: a_circ_linux_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(Q) &to 0>;
+            label = "A_CIRC_LINUX_LOWER";
+        };
+
+        a_circ_linux_upper: a_circ_linux_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(A) &to 0>;
+            label = "A_CIRC_LINUX_UPPER";
+        };
     };
 
     keymap {
@@ -628,10 +642,10 @@
 
         AccentsL {
             bindings = <
-  &a_circ_linux             &kp RA(R)       &oe_ligature_linux  &o_circ_upper_lower_linux  &none             &none   &none                     &kp N8   &none        &u_circ
-  &a_acute                  &e_acute_linux  &e_grave            &e_circ                    &none             &kp N5  &kp MINUS                 &i_circ  &i_diaresis  &u_grave
-  &ae_ligature_linux_lower  &none           &none               &none                      &none             &none   &none                     &none    &none        &none
-                                            &none               &none                      &kp LEFT_SHIFT    &none   &typographical_apo_linux  &none
+  &a_circ_linux             &kp RA(R)       &oe_ligature_upper_lower_linux  &o_circ_upper_lower_linux  &none             &none   &none                     &kp N8   &none        &u_circ
+  &a_acute                  &e_acute_linux  &e_grave                        &e_circ                    &none             &kp N5  &kp MINUS                 &i_circ  &i_diaresis  &u_grave
+  &ae_ligature_linux_lower  &none           &none                           &none                      &none             &none   &none                     &none    &none        &none
+                                            &none                           &none                      &kp LEFT_SHIFT    &none   &typographical_apo_linux  &none
             >;
 
             label = "Accts lnx";
