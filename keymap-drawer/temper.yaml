@@ -75,7 +75,7 @@ layers:
   - {t: ␣, h: Nav}
   - {t: ⌦, h: AltGr w}
   Accts lnx:
-  - {t: AltGr+Q, s: AltGr+A}
+  - {t: '&a_circ_linux_lower', s: '&a_circ_linux_upper'}
   - AltGr+R
   - {t: '&oe_ligature_linux_lower', s: '&oe_ligature_linux_upper'}
   - {t: '&o_circ_linux', s: '&o_circ_upper_linux'}
