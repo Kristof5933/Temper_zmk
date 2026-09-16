@@ -823,14 +823,14 @@
         left_parenthesis_linux: left_parenthesis_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N5>;
+            bindings = <&kp N5 &to 1>;
             label = "LEFT_PARENTHESIS_LINUX";
         };
 
         right_parenthesis_linux: right_parenthesis_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp MINUS>;
+            bindings = <&kp MINUS &to 1>;
             label = "RIGHT_PARENTHESIS_LINUX";
         };
 
