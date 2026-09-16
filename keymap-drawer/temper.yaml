@@ -20,7 +20,7 @@ layers:
   - J
   - {t: K, h: RIGHT CONTROL}
   - {t: L, h: AltGr}
-  - {t: U, h: ;}
+  - {t: ;, h: Win}
   - Z
   - X
   - C
@@ -120,7 +120,7 @@ layers:
   - ''
   - ''
   - '8'
-  - ''
+  - {t: linux, h: toggle}
   - '&u_circ'
   - {t: '&a_grave_lower_linux', s: '&a_grave_upper_linux'}
   - {t: '&e_acute_lower_linux', s: '&e_acute_upper_linux'}
@@ -157,7 +157,7 @@ layers:
   - ''
   - ''
   - '8'
-  - {type: held}
+  - {t: windows, h: toggle, type: held}
   - '&u_circ'
   - {t: '0', s: '&a_grave_upper'}
   - {t: '2', s: '&e_acute_upper_windows'}
