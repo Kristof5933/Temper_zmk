@@ -114,7 +114,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        comma_semicolon: comma_semicolon { 
+        comma_semicolon: comma_semicolon {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_SEMICOLON";
             bindings = <&kp M>, <&kp COMMA>;
@@ -166,8 +166,8 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        }; 
-        
+        };
+
         e_acute_linux: e_acute_linux {
             compatible = "zmk,behavior-mod-morph";
             label = "E_ACUTE_LINUX";
@@ -270,7 +270,7 @@
         accent_layer_linux: accent_layer_linux {
             compatible = "zmk,behavior-mod-morph";
             label = "ACCENT_LAYER_LINUX";
-            bindings = <&to 2>, <&kp SLASH>;
+            bindings = <&to 3>, <&kp SLASH>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -279,14 +279,11 @@
         accent_layer_windows: accent_layer_windows {
             compatible = "zmk,behavior-mod-morph";
             label = "ACCENT_LAYER_WINDOWS";
-            bindings = <&sl 3>, <&kp SLASH>;
+            bindings = <&sl 4>, <&kp SLASH>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
-
-
     };
 
     combos {
@@ -295,135 +292,136 @@
         Caps {
             bindings = <&kp CAPSLOCK>;
             key-positions = <10 19>;
-            layers = <0>;
+            layers = <1>;
         };
-       Alt+tab {
+
+        Alt+tab {
             bindings = <&kp LA(TAB)>;
             key-positions = <10 11 12>;
-            layers = <0>;
+            layers = <1>;
             timeout-ms = <100>;
         };
 
         Tilde {
             bindings = <&kp TILDE>;
             key-positions = <0 10>;
-            layers = <0>;
+            layers = <1>;
         };
 
         Cut {
             bindings = <&kp LC(X)>;
             key-positions = <21 22>;
-            layers = <0>;
+            layers = <1>;
         };
 
         Copy {
             bindings = <&kp LC(C)>;
             key-positions = <22 23>;
-            layers = <0>;
+            layers = <1>;
         };
 
         Paste {
             bindings = <&kp LC(V)>;
             key-positions = <23 24>;
-            layers = <0>;
+            layers = <1>;
         };
 
         screenshot {
             bindings = <&kp LG(LS(S))>;
             key-positions = <9 8>;
-            layers = <0>;
+            layers = <1>;
         };
 
         semicolon {
             bindings = <&kp SEMICOLON>;
             key-positions = <27 28>;
-            layers = <0>;
+            layers = <1>;
         };
 
         minus {
             bindings = <&kp MINUS>;
             key-positions = <18 19>;
-            layers = <0>;
+            layers = <1>;
             timeout-ms = <150>;
         };
 
         boot_l {
             bindings = <&bootloader>;
             key-positions = <0 4 32>;
-            layers = <0>;
+            layers = <1>;
         };
 
         alt_f4 {
             bindings = <&kp LA(F4)>;
             key-positions = <0 1 2>;
-            layers = <0>;
+            layers = <1>;
         };
 
         esc_left {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
-            layers = <0>;
+            layers = <1>;
             timeout-ms = <100>;
         };
 
         bluetooth {
-            bindings = <&mo 8>;
+            bindings = <&mo 9>;
             key-positions = <32 33>;
         };
 
         win_nav_left {
             bindings = <&kp LG(LEFT)>;
             key-positions = <16 17>;
-            layers = <10>;
+            layers = <11>;
         };
 
         win_nav_right {
             bindings = <&kp LG(RIGHT)>;
             key-positions = <19 18>;
-            layers = <10>;
+            layers = <11>;
         };
 
         win_nav_up {
             bindings = <&kp LG(UP_ARROW)>;
             key-positions = <7 8>;
-            layers = <10>;
+            layers = <11>;
         };
 
         win_nav_down {
             bindings = <&kp LG(DOWN_ARROW)>;
             key-positions = <17 18>;
-            layers = <10>;
+            layers = <11>;
         };
 
         win_nav_left_shift {
             bindings = <&kp LG(LS(LEFT))>;
             key-positions = <16 17 18>;
-            layers = <10>;
+            layers = <11>;
         };
 
         win_nav_right_shift {
             bindings = <&kp LG(LS(RIGHT))>;
             key-positions = <19 18 17>;
-            layers = <10>;
+            layers = <11>;
         };
 
         num_equal {
             bindings = <&kp EQUAL>;
             key-positions = <16 17 18>;
-            layers = <7>;
+            layers = <8>;
             timeout-ms = <175>;
         };
 
         num_par_left {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <16 17>;
-            layers = <7>;
+            layers = <8>;
         };
 
         num_par_right {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <18 19>;
-            layers = <7>;
+            layers = <8>;
         };
 
         del_left {
@@ -433,21 +431,27 @@
         };
 
         mouse_layer_switch {
-            bindings = <&tog 11>;
+            bindings = <&tog 12>;
             key-positions = <14 15>;
             timeout-ms = <175>;
         };
 
-        switch_to_win {
+        linux_to_windows {
+            bindings = <&to 2>;
+            key-positions = <33 34>;
+            layers = <1>;
+        };
+
+        windows_to_ergol {
+            bindings = <&to 0>;
+            key-positions = <33 34>;
+            layers = <2>;
+        };
+
+        ergol_to_linux {
             bindings = <&to 1>;
             key-positions = <33 34>;
             layers = <0>;
-        };
-
-        switch_to_linux {
-            bindings = <&to 0>;
-            key-positions = <33 34>;
-            layers = <1>;
         };
     };
 
@@ -455,112 +459,112 @@
         a_circ_linux_lower: a_circ_linux_lower {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(Q) &to 0>;
+            bindings = <&kp RA(Q) &to 1>;
             label = "A_CIRC_LINUX_LOWER";
         };
 
         a_circ_linux_upper: a_circ_linux_upper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(A) &to 0>;
+            bindings = <&kp RA(A) &to 1>;
             label = "A_CIRC_LINUX_UPPER";
         };
 
         c_cedilla_linux_lower: c_cedilla_linux_lower {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(R) &to 0>;
+            bindings = <&kp RA(R) &to 1>;
             label = "C_CEDILLA_LINUX_LOWER";
         };
 
         c_cedilla_linux_upper: c_cedilla_linux_upper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(LS(R)) &to 0>;
+            bindings = <&kp RA(LS(R)) &to 1>;
             label = "C_CEDILLA_LINUX_UPPER";
         };
 
         oe_ligature_linux_lower: oe_ligature_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N5 &kp N3 &kp ENTER &to 0>;
+            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N5 &kp N3 &kp ENTER &to 1>;
             label = "OE_LIGATURE_LINUX_LOWER";
         };
 
         oe_ligature_linux_upper: oe_ligature_linux_upper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N5 &kp N2 &kp ENTER &to 0>;
+            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N5 &kp N2 &kp ENTER &to 1>;
             label = "OE_LIGATURE_LINUX_UPPER";
         };
 
         o_circ_lower_linux: o_circ_lower_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp O &to 0>;
+            bindings = <&kp LEFT_BRACKET &kp O &to 1>;
             label = "O_CIRC_LOWER_LINUX";
         };
 
         o_circ_upper_linux: o_circ_upper_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp LS(O) &to 0>;
+            bindings = <&kp LEFT_BRACKET &kp LS(O) &to 1>;
             label = "O_CIRC_UPPER_LINUX";
         };
 
         a_grave_lower_linux: a_grave_lower_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(N7) &kp Q &to 0>;
+            bindings = <&kp RA(N7) &kp Q &to 1>;
             label = "A_GRAVE_LOWER_LINUX";
         };
 
         a_grave_upper_linux: a_grave_upper_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(N7) &kp LS(Q) &to 0>;
+            bindings = <&kp RA(N7) &kp LS(Q) &to 1>;
             label = "A_GRAVE_UPPER_LINUX";
         };
 
         e_acute_lower_linux: e_acute_lower_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp NUMBER_2 &to 0>;
+            bindings = <&kp NUMBER_2 &to 1>;
             label = "E_ACUTE_LOWER_LINUX";
         };
 
         e_acute_upper_linux: e_acute_upper_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp N9 &kp ENTER &to 0>;
+            bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp N9 &kp ENTER &to 1>;
             label = "E_ACUTE_UPPER_LINUX";
         };
 
         e_grave_lower_linux: e_grave_lower_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp NUMBER_7 &to 0>;
+            bindings = <&kp NUMBER_7 &to 1>;
             label = "E_GRAVE_LOWER_LINUX";
         };
 
         e_grave_upper_linux: e_grave_upper_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(RS(NUMBER_7)) &to 0>;
+            bindings = <&kp RA(RS(NUMBER_7)) &to 1>;
             label = "E_GRAVE_UPPER_LINUX";
         };
 
         e_circ_lower_linux: e_circ_lower_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(RIGHT_BRACKET) &to 0>;
+            bindings = <&kp RA(RIGHT_BRACKET) &to 1>;
             label = "E_GRAVE_LOWER_LINUX";
         };
 
         e_circ_upper_linux: e_circ_upper_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(D) &to 0>;
+            bindings = <&kp LA(D) &to 1>;
             label = "E_GRAVE_UPPER_LINUX";
         };
 
@@ -588,7 +592,7 @@
         ae_ligature_linux_lower: ae_ligature {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp E &kp N6 &kp RET &to 0>;
+            bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp E &kp N6 &kp RET &to 1>;
             label = "AE_LIGATURE";
         };
 
@@ -679,7 +683,7 @@
         e_acute_upper_windows: a_grave_upper_windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N1 &kt LEFT_ALT &to 0>;
+            bindings = <&kt LEFT_ALT &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N1 &kt LEFT_ALT &to 1>;
             label = "A_GRAVE_UPPER_WINDOWS";
         };
 
@@ -700,7 +704,7 @@
         typographical_apo_linux: typographical_apo_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(U)) &kp KP_N2 &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp ENTER &to 0>;
+            bindings = <&kp LS(LC(U)) &kp KP_N2 &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp ENTER &to 1>;
             label = "TYPOGRAPHICAL_APO_LINUX";
         };
 
@@ -715,6 +719,16 @@
     keymap {
         compatible = "zmk,keymap";
 
+        ergol {
+            label = "ergol";
+            bindings = <
+  &kp Q            &kp W           &kp E               &kp R            &kp T                 &kp Y                &kp U        &kp I                &kp O            &kp P
+  &hml LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &kp F            &kp G                 &kp H                &kp J        &hm RIGHT_CONTROL K  &hm RIGHT_ALT L  &hmr SEMICOLON U
+  &kp Z            &kp X           &kp C               &kp V            &kp B                 &kp N                &kp M        &kp COMMA            &kp PERIOD       &kp SLASH
+                                   &lt 9 ESCAPE        &lt 8 BACKSPACE  &hm LEFT_SHIFT TAB    &mt RIGHT_ALT ENTER  &lt 5 SPACE  &lt 6 DEL
+            >;
+        };
+
         Basel {
             //            display-name = "Base";
 
@@ -722,7 +736,7 @@
   &kp A            &kp C           &kp O               &kp P            &kp Z                 &kp J        &kp SEMICOLON  &kp D                &accent_layer_linux  &kp Y
   &hml LEFT_GUI Q  &hm LEFT_ALT S  &hm LEFT_CONTROL E  &kp N            &kp F                 &kp L        &kp R          &hm RIGHT_CONTROL T  &hm RIGHT_ALT I      &hmr RIGHT_GUI U
   &kp W            &kp X           &dash_question      &kp V            &kp B                 &dot_colon   &kp H          &kp G                &comma_semicolon     &kp K
-                                   &lt 8 ESCAPE        &lt 7 BACKSPACE  &hm LEFT_SHIFT TAB    &lt 9 ENTER  &lt 4 SPACE    &lt 5 DEL
+                                   &lt 9 ESCAPE        &lt 8 BACKSPACE  &hm LEFT_SHIFT TAB    &lt 6 ENTER  &lt 5 SPACE    &lt 10 DEL
             >;
 
             label = "linux";
@@ -737,16 +751,16 @@
   &kp A            &kp C           &kp O               &kp P            &kp Z                 &kp J        &kp SEMICOLON  &kp D                &accent_layer_windows  &kp Y
   &hml LEFT_GUI Q  &hm LEFT_ALT S  &hm LEFT_CONTROL E  &kp N            &kp F                 &kp L        &kp R          &hm RIGHT_CONTROL T  &hm RIGHT_ALT I        &hmr RIGHT_GUI U
   &kp W            &kp X           &dash_question      &kp V            &kp B                 &dot_colon   &kp H          &kp G                &comma_semicolon       &kp K
-                                   &lt 8 ESCAPE        &lt 7 BACKSPACE  &hm LEFT_SHIFT TAB    &lt 9 ENTER  &lt 4 SPACE    &lt 6 DEL
+                                   &lt 9 ESCAPE        &lt 8 BACKSPACE  &hm LEFT_SHIFT TAB    &lt 7 ENTER  &lt 5 SPACE    &lt 10 DEL
             >;
         };
 
         AccentsL {
             bindings = <
-  &a_circ_linux             &c_cedilla_linux   &oe_ligature_linux  &o_circ_linux   &none             &none   &none                     &kp N8   &none        &u_circ
-  &a_grave_linux            &e_acute_linux     &e_grave_linux      &e_circ_linux   &none             &kp N5  &kp MINUS                 &i_circ  &i_diaresis  &u_grave
-  &ae_ligature_linux_lower  &none              &none               &none           &none             &none   &none                     &none    &none        &none
-                                               &none               &none           &kp LEFT_SHIFT    &none   &typographical_apo_linux  &none
+  &a_circ_linux             &c_cedilla_linux  &oe_ligature_linux  &o_circ_linux  &none             &none   &none                     &kp N8   &none        &u_circ
+  &a_grave_linux            &e_acute_linux    &e_grave_linux      &e_circ_linux  &none             &kp N5  &kp MINUS                 &i_circ  &i_diaresis  &u_grave
+  &ae_ligature_linux_lower  &none             &none               &none          &none             &none   &none                     &none    &none        &none
+                                              &none               &none          &kp LEFT_SHIFT    &none   &typographical_apo_linux  &none
             >;
 
             label = "Accts lnx";
