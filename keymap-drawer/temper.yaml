@@ -116,38 +116,38 @@ layers:
   - {t: '&c_cedilla_linux_lower', s: '&c_cedilla_linux_upper'}
   - {t: '&oe_ligature_linux_lower', s: '&oe_ligature_linux_upper'}
   - {t: '&o_circ_lower_linux', s: '&o_circ_upper_linux'}
-  - ''
-  - ''
-  - ''
-  - '8'
+  - {t: linux, h: toggle}
+  - {t: linux, h: toggle}
+  - {t: linux, h: toggle}
+  - '&underscore_linux'
   - {t: linux, h: toggle}
   - '&u_circ'
   - {t: '&a_grave_lower_linux', s: '&a_grave_upper_linux'}
   - {t: '&e_acute_lower_linux', s: '&e_acute_upper_linux'}
   - {t: '&e_grave_lower_linux', s: '&e_grave_upper_linux'}
   - {t: '&e_circ_lower_linux', s: '&e_circ_upper_linux'}
-  - ''
+  - {t: linux, h: toggle}
   - '5'
   - '-'
   - '&i_circ'
   - '&i_diaresis'
   - {t: '''', s: '&u_grave_upper'}
-  - {t: '&ae_ligature_linux_lower', s: '&ae_ligature_linux_lower'}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: '&ae_ligature_linux_lower', s: '&ae_ligature_linux_upper'}
+  - {t: linux, h: toggle}
+  - {t: linux, h: toggle}
+  - {t: linux, h: toggle}
+  - {t: linux, h: toggle}
+  - {t: linux, h: toggle}
+  - {t: linux, h: toggle}
+  - {t: linux, h: toggle}
+  - {t: linux, h: toggle}
+  - {t: linux, h: toggle}
+  - {t: linux, h: toggle}
+  - {t: linux, h: toggle}
   - Shift
-  - ''
+  - {t: linux, h: toggle}
   - '&typographical_apo_linux'
-  - ''
+  - {t: linux, h: toggle}
   Accts win:
   - {t: '&a_circ_windows_lower', s: '&a_circ_windows_upper'}
   - {t: '9', s: '&c_cedilla_windows_upper'}
