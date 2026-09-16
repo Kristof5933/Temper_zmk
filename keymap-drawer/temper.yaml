@@ -1,5 +1,42 @@
 layout: {zmk_keyboard: temper}
 layers:
+  ergol:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: Win}
+  - {t: S, h: Alt}
+  - {t: D, h: LEFT CONTROL}
+  - F
+  - G
+  - H
+  - J
+  - {t: K, h: RIGHT CONTROL}
+  - {t: L, h: AltGr}
+  - {t: U, h: ;}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: ESCAPE, h: Media}
+  - {t: ⌫, h: Num}
+  - {t: ↹, h: Shift}
+  - {t: ⏎, h: AltGr}
+  - {t: ␣, h: Nav}
+  - {t: ⌦, h: AltGr l}
   linux:
   - A
   - C
@@ -34,9 +71,9 @@ layers:
   - {t: ESCAPE, h: Media}
   - {t: ⌫, h: Num}
   - {t: ↹, h: Shift}
-  - {t: ⏎, h: Funct}
+  - {t: ⏎, h: AltGr l}
   - {t: ␣, h: Nav}
-  - {t: ⌦, h: AltGr l}
+  - {t: ⌦, h: Funct}
   windows:
   - A
   - C
@@ -71,9 +108,9 @@ layers:
   - {t: ESCAPE, h: Media}
   - {t: ⌫, h: Num}
   - {t: ↹, h: Shift}
-  - {t: ⏎, h: Funct}
+  - {t: ⏎, h: AltGr w}
   - {t: ␣, h: Nav}
-  - {t: ⌦, h: AltGr w}
+  - {t: ⌦, h: Funct}
   Accts lnx:
   - {t: '&a_circ_linux_lower', s: '&a_circ_linux_upper'}
   - {t: '&c_cedilla_linux_lower', s: '&c_cedilla_linux_upper'}
@@ -256,9 +293,9 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
   - {type: held}
+  - ''
+  - ''
   Num:
   - Boot
   - ''
@@ -367,9 +404,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   Focus:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -518,5 +555,8 @@ combos:
   k: {t: windows, h: toggle}
   l: [linux]
 - p: [33, 34]
-  k: {t: linux, h: toggle}
+  k: {t: ergol, h: toggle}
   l: [windows]
+- p: [33, 34]
+  k: {t: linux, h: toggle}
+  l: [ergol]
