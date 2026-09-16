@@ -511,14 +511,14 @@
         a_grave_lower_linux: a_grave_lower_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(N7) &kp Q>;
+            bindings = <&kp RA(N7) &kp Q &to 0>;
             label = "A_GRAVE_LOWER_LINUX";
         };
 
         a_grave_upper_linux: a_grave_upper_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(N7) &kp LS(Q)>;
+            bindings = <&kp RA(N7) &kp LS(Q) &to 0>;
             label = "A_GRAVE_UPPER_LINUX";
         };
 
