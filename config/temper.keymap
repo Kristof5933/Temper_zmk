@@ -302,6 +302,51 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        u_circ_linux: u_circ_linux {
+            compatible = "zmk,behavior-mod-morph";
+            label = "U_CIRC_LINUX";
+            bindings = <&u_circ_lower_linux>, <&u_circ_upper_linux>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        left_parenthesis_linux_nocase: left_parenthesis_linux_nocase {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LEFT_PARENTHESIS_LINUX_NOCASE";
+            bindings = <&left_parenthesis_linux>, <&left_parenthesis_linux>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        right_parenthesis_no_case: right_parenthesis_no_case {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RIGHT_PARENTHESIS_NO_CASE";
+            bindings = <&right_parenthesis_linux>, <&right_parenthesis_linux>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        i_circ_linux: i_circ_linux {
+            compatible = "zmk,behavior-mod-morph";
+            label = "I_CIRC_LINUX";
+            bindings = <&i_circ_lower_linux>, <&i_circ_upper_linux>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        i_diaresis_linux: i_diaresis_linux {
+            compatible = "zmk,behavior-mod-morph";
+            label = "I_DIARESIS_LINUX";
+            bindings = <&i_diaresis_lower_linux>, <&i_diaresis_upper_linux>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -760,6 +805,62 @@
             bindings = <&kp RA(N7) &kp U &to 1>;
             label = "U_GRAVE_LOWER_LINUX";
         };
+
+        u_circ_lower_linux: u_circ_linux_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp U &to 1>;
+            label = "U_CIRC_LINUX_LOWER";
+        };
+
+        u_circ_upper_linux: u_circ_upper_linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp LS(U) &to 1>;
+            label = "U_CIRC_UPPER_LINUX";
+        };
+
+        left_parenthesis_linux: left_parenthesis_linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N5>;
+            label = "LEFT_PARENTHESIS_LINUX";
+        };
+
+        right_parenthesis_linux: right_parenthesis_linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>;
+            label = "RIGHT_PARENTHESIS_LINUX";
+        };
+
+        i_circ_lower_linux: i_circ_lower_linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp I &to 1>;
+            label = "I_CIRC_LOWER_LINUX";
+        };
+
+        i_circ_upper_linux: i_circ_upper_linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp LS(I) &to 1>;
+            label = "I_CIRC_UPPER_LINUX";
+        };
+
+        i_diaresis_lower_linux: i_diaresis_lower_linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LEFT_BRACKET) &kp I &to 1>;
+            label = "I_DIARESIS_LOWER_LINUX";
+        };
+
+        i_diaresis_upper_linux: i_diaresis_upper_linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LEFT_BRACKET) &kp LS(I) &to 1>;
+            label = "I_DIARESIS_UPPER_LINUX";
+        };
     };
 
     keymap {
@@ -803,10 +904,10 @@
 
         AccentsL {
             bindings = <
-  &a_circ_linux       &c_cedilla_linux  &oe_ligature_linux  &o_circ_linux  &to 1             &to 1   &to 1                     &underscore_linux  &to 1        &u_circ
-  &a_grave_linux      &e_acute_linux    &e_grave_linux      &e_circ_linux  &to 1             &kp N5  &kp MINUS                 &i_circ            &i_diaresis  &u_grave
-  &ae_ligature_linux  &to 1             &to 1               &to 1          &to 1             &to 1   &to 1                     &to 1              &to 1        &to 1
-                                        &to 1               &to 1          &kp LEFT_SHIFT    &to 1   &typographical_apo_linux  &to 1
+  &a_circ_linux       &c_cedilla_linux  &oe_ligature_linux  &o_circ_linux  &to 1             &to 1                           &to 1                       &underscore_linux  &to 1              &u_circ_linux
+  &a_grave_linux      &e_acute_linux    &e_grave_linux      &e_circ_linux  &to 1             &left_parenthesis_linux_nocase  &right_parenthesis_no_case  &i_circ_linux      &i_diaresis_linux  &u_grave_linux
+  &ae_ligature_linux  &to 1             &to 1               &to 1          &to 1             &to 1                           &to 1                       &to 1              &to 1              &to 1
+                                        &to 1               &to 1          &kp LEFT_SHIFT    &to 1                           &typographical_apo_linux    &to 1
             >;
 
             label = "Accts lnx";
