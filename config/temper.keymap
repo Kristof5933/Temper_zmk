@@ -558,14 +558,14 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RA(RIGHT_BRACKET) &to 1>;
-            label = "E_GRAVE_LOWER_LINUX";
+            label = "E_CIRC_LOWER_LINUX";
         };
 
         e_circ_upper_linux: e_circ_upper_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(D) &to 1>;
-            label = "E_GRAVE_UPPER_LINUX";
+            bindings = <&kp RA(D) &to 1>;
+            label = "E_CIRC_UPPER_LINUX";
         };
 
         a_circ_windows_lower: a_circ {
@@ -723,7 +723,7 @@
             label = "ergol";
             bindings = <
   &kp Q            &kp W           &kp E               &kp R            &kp T                 &kp Y                &kp U        &kp I                &kp O            &kp P
-  &hml LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &kp F            &kp G                 &kp H                &kp J        &hm RIGHT_CONTROL K  &hm RIGHT_ALT L  &hmr SEMICOLON U
+  &hml LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &kp F            &kp G                 &kp H                &kp J        &hm RIGHT_CONTROL K  &hm RIGHT_ALT L  &hmr RIGHT_GUI SEMICOLON
   &kp Z            &kp X           &kp C               &kp V            &kp B                 &kp N                &kp M        &kp COMMA            &kp PERIOD       &kp SLASH
                                    &lt 9 ESCAPE        &lt 8 BACKSPACE  &hm LEFT_SHIFT TAB    &mt RIGHT_ALT ENTER  &lt 5 SPACE  &lt 6 DEL
             >;
@@ -757,7 +757,7 @@
 
         AccentsL {
             bindings = <
-  &a_circ_linux             &c_cedilla_linux  &oe_ligature_linux  &o_circ_linux  &none             &none   &none                     &kp N8   &none        &u_circ
+  &a_circ_linux             &c_cedilla_linux  &oe_ligature_linux  &o_circ_linux  &none             &none   &none                     &kp N8   &to 1        &u_circ
   &a_grave_linux            &e_acute_linux    &e_grave_linux      &e_circ_linux  &none             &kp N5  &kp MINUS                 &i_circ  &i_diaresis  &u_grave
   &ae_ligature_linux_lower  &none             &none               &none          &none             &none   &none                     &none    &none        &none
                                               &none               &none          &kp LEFT_SHIFT    &none   &typographical_apo_linux  &none
@@ -769,7 +769,7 @@
         AccentsW {
             label = "Accts win";
             bindings = <
-  &a_circ_windows       &c_cedilla_windows  &oe_ligature_windows  &o_circ_upper_lower_windows  &none             &none   &none                       &kp N8   &none        &u_circ
+  &a_circ_windows       &c_cedilla_windows  &oe_ligature_windows  &o_circ_upper_lower_windows  &none             &none   &none                       &kp N8   &to 2        &u_circ
   &a_grave              &e_acute_windows    &e_grave              &e_circ                      &none             &kp N5  &kp MINUS                   &i_circ  &i_diaresis  &u_grave
   &ae_ligature_windows  &none               &none                 &none                        &none             &none   &none                       &none    &none        &none
                                             &none                 &none                        &sk LEFT_SHIFT    &none   &typographical_apo_windows  &none
