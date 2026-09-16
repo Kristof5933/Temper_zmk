@@ -284,6 +284,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        ae_ligature_linux: ae_ligature_linux {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AE_LIGATURE_LINUX";
+            bindings = <&ae_ligature_linux_lower>, <&ae_ligature_linux_lower>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RCTL)>;
+        };
     };
 
     combos {
@@ -487,14 +496,14 @@
         oe_ligature_linux_lower: oe_ligature_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N5 &kp N3 &kp ENTER &to 1>;
+            bindings = <&kp GRAVE &to 1>;
             label = "OE_LIGATURE_LINUX_LOWER";
         };
 
         oe_ligature_linux_upper: oe_ligature_linux_upper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N5 &kp N2 &kp ENTER &to 1>;
+            bindings = <&kp LS(GRAVE) &to 1>;
             label = "OE_LIGATURE_LINUX_UPPER";
         };
 
@@ -592,7 +601,7 @@
         ae_ligature_linux_lower: ae_ligature {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp E &kp N6 &kp RET &to 1>;
+            bindings = <&kp RA(G) &to 1>;
             label = "AE_LIGATURE";
         };
 
@@ -714,6 +723,13 @@
             bindings = <&kt LEFT_ALT &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N6 &kt LEFT_ALT>;
             label = "TYPOGRAPHICAL_APO_WINDOWS";
         };
+
+        ae_ligature_linux_upper: ae_ligature_upper_linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(G) &to 1>;
+            label = "AE_LIGATURE_UPPER_LINUX";
+        };
     };
 
     keymap {
@@ -757,10 +773,10 @@
 
         AccentsL {
             bindings = <
-  &a_circ_linux             &c_cedilla_linux  &oe_ligature_linux  &o_circ_linux  &none             &none   &none                     &kp N8   &to 1        &u_circ
-  &a_grave_linux            &e_acute_linux    &e_grave_linux      &e_circ_linux  &none             &kp N5  &kp MINUS                 &i_circ  &i_diaresis  &u_grave
-  &ae_ligature_linux_lower  &none             &none               &none          &none             &none   &none                     &none    &none        &none
-                                              &none               &none          &kp LEFT_SHIFT    &none   &typographical_apo_linux  &none
+  &a_circ_linux       &c_cedilla_linux  &oe_ligature_linux  &o_circ_linux  &none             &none   &none                     &kp N8   &to 1        &u_circ
+  &a_grave_linux      &e_acute_linux    &e_grave_linux      &e_circ_linux  &none             &kp N5  &kp MINUS                 &i_circ  &i_diaresis  &u_grave
+  &ae_ligature_linux  &none             &none               &none          &none             &none   &none                     &none    &none        &none
+                                        &none               &none          &kp LEFT_SHIFT    &none   &typographical_apo_linux  &none
             >;
 
             label = "Accts lnx";
