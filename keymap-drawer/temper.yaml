@@ -132,7 +132,7 @@ layers:
   - '&i_circ'
   - '&i_diaresis'
   - {t: '''', s: '&u_grave_upper'}
-  - '&ae_ligature_linux_lower'
+  - {t: '&ae_ligature_linux_lower', s: '&ae_ligature_linux_lower'}
   - ''
   - ''
   - ''
