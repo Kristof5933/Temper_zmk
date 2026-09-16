@@ -293,6 +293,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RCTL)>;
         };
+
+        u_grave_linux: u_grave_linux {
+            compatible = "zmk,behavior-mod-morph";
+            label = "U_GRAVE_LINUX";
+            bindings = <&u_grave_lower_linux>, <&u_grave_upper_linux>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -736,6 +745,20 @@
             #binding-cells = <0>;
             bindings = <&kp N8 &to 1>;
             label = "UNDERSCORE_LINUX";
+        };
+
+        u_grave_upper_linux: u_grave_upper_linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(N7) &kp LS(U) &to 1>;
+            label = "U_GRAVE_UPPER_LINUX";
+        };
+
+        u_grave_lower_linux: u_grave_lower_linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(N7) &kp U &to 1>;
+            label = "U_GRAVE_LOWER_LINUX";
         };
     };
 
