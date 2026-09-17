@@ -279,7 +279,7 @@
         accent_layer_windows: accent_layer_windows {
             compatible = "zmk,behavior-mod-morph";
             label = "ACCENT_LAYER_WINDOWS";
-            bindings = <&sl 4>, <&kp SLASH>;
+            bindings = <&to 4>, <&kp SLASH>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -817,7 +817,7 @@
         a_grave_lower_windows: a_grave_lower_windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(N7) &kp A &to 2>;
+            bindings = <&kp RA(N7) &kp Q &to 2>;
             label = "A_GRAVE_LOWER_WINDOWS";
         };
 
@@ -999,14 +999,14 @@
         c_cedila_lower_windows: c_cedila_lower_windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp N9 &to 2>;
+            bindings = <&kp N9 &to 2>;
             label = "C_CEDILA_LOWER_WINDOWS";
         };
 
         a_grave_upper_windows: a_grave_upper_windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(N7) &kp LS(A) &to 2>;
+            bindings = <&kp RA(N7) &kp LS(Q) &to 2>;
             label = "A_GRAVE_UPPER_WINDOWS";
         };
 
@@ -1020,7 +1020,7 @@
         e_grave_lower_windows: e_grave_lower_windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(N7) &to 2>;
+            bindings = <&kp N7 &to 2>;
             label = "E_GRAVE_LOWER_WINDOWS";
         };
 
