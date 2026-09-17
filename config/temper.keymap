@@ -195,10 +195,10 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        o_circ_upper_lower_windows: o_circ_upper_lower_windows {
+        o_circ_windows: o_circ_windows {
             compatible = "zmk,behavior-mod-morph";
-            label = "O_CIRC_UPPER_LOWER_WINDOWS";
-            bindings = <&o_circ_windows>, <&o_circ_upper_windows>;
+            label = "O_CIRC_WINDOWS";
+            bindings = <&o_circ_lower_windows>, <&o_circ_upper_windows>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -225,16 +225,16 @@
         c_cedilla_windows: c_cedilla_windows {
             compatible = "zmk,behavior-mod-morph";
             label = "C_CEDILLA_WINDOWS";
-            bindings = <&kp N9>, <&c_cedilla_windows_upper>;
+            bindings = <&c_cedila_lower_windows>, <&c_cedilla_upper_windows>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        a_grave: a_grave {
+        a_grave_windows: a_grave_windows {
             compatible = "zmk,behavior-mod-morph";
-            label = "a_grave";
-            bindings = <&kp N0>, <&a_grave_upper>;
+            label = "A_GRAVE_WINDOWS";
+            bindings = <&a_grave_lower_windows>, <&a_grave_upper_windows>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -243,25 +243,25 @@
         e_acute_windows: e_acute_windows {
             compatible = "zmk,behavior-mod-morph";
             label = "E_ACUTE_WINDOWS";
-            bindings = <&kp NUMBER_2>, <&e_acute_upper_windows>;
+            bindings = <&e_acute_lower_windows>, <&e_acute_upper_windows>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        e_grave: e_grave {
+        e_grave_windows: e_grave_windows {
             compatible = "zmk,behavior-mod-morph";
-            label = "E_GRAVE";
-            bindings = <&kp N7>, <&e_grave_upper>;
+            label = "E_GRAVE_WINDOWS";
+            bindings = <&e_grave_lower_windows>, <&e_grave_upper_windows>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        u_grave: u_grave {
+        u_grave_windows: u_grave_windows {
             compatible = "zmk,behavior-mod-morph";
-            label = "U_GRAVE";
-            bindings = <&kp SINGLE_QUOTE>, <&u_grave_upper>;
+            label = "U_GRAVE_WINDOWS";
+            bindings = <&u_grave_lower_windows>, <&u_grave_upper_windows>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -343,6 +343,84 @@
             compatible = "zmk,behavior-mod-morph";
             label = "I_DIARESIS_LINUX";
             bindings = <&i_diaresis_lower_linux>, <&i_diaresis_upper_linux>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        u_circ_windows: u_circ_windows {
+            compatible = "zmk,behavior-mod-morph";
+            label = "U_CIRC_WINDOWS";
+            bindings = <&u_circ_lower_windows>, <&u_circ_upper_windows>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        i_diaresis_windows: i_diaresis_windows {
+            compatible = "zmk,behavior-mod-morph";
+            label = "I_DIARESIS_WINDOWS";
+            bindings = <&i_diaresis_lower_windows>, <&i_diaresis_upper_windows>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        i_circ_windows: i_circ_windows {
+            compatible = "zmk,behavior-mod-morph";
+            label = "I_CIRC_WINDOWS";
+            bindings = <&i_circ_lower_windows>, <&i_circ_upper_windows>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        left_parenthesis_windows_nocase: left_parenthesis_windows_nocase {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LEFT_PARENTHESIS_WINDOWS_NOCASE";
+            bindings = <&left_parenthesis_windows>, <&left_parenthesis_windows>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        right_parenthesis_windows_nocas: right_parenthesis_windows_nocas {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RIGHT_PARENTHESIS_WINDOWS_NOCAS";
+            bindings =
+                <&right_parenthesis_windows>,
+                <&right_parenthesis_windows>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        oe_ligature_windows: oe_ligature_windows {
+            compatible = "zmk,behavior-mod-morph";
+            label = "OE_LIGATURE_WINDOWS";
+            bindings =
+                <&oe_ligature_windows_lower>,
+                <&oe_ligature_upper_windows>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        e_circ_windows: e_circ_windows {
+            compatible = "zmk,behavior-mod-morph";
+            label = "E_CIRC_WINDOWS";
+            bindings = <&e_circ_lower_windows>, <&e_circ_upper_windows>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ae_ligature_windows: ae_ligature_windows {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AE_LIGATURE_WINDOWS";
+            bindings =
+                <&ae_ligature_windows_lower>,
+                <&ae_ligature_upper_windows>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -634,22 +712,22 @@
         a_circ_windows_lower: a_circ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp Q>;
+            bindings = <&kp LEFT_BRACKET &kp Q &to 2>;
             label = "A_CIRC";
         };
 
-        o_circ_windows: o_circ {
+        o_circ_lower_windows: o_circ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp O>;
+            bindings = <&kp LEFT_BRACKET &kp O &to 2>;
             label = "O_CIRC";
         };
 
-        e_circ: e_circ {
+        e_circ_lower_windows: e_circ_lower_windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp E>;
-            label = "E_CIRC";
+            bindings = <&kp LEFT_BRACKET &kp E &to 2>;
+            label = "E_CIRC_LOWER_WINDOWS";
         };
 
         ae_ligature_linux_lower: ae_ligature {
@@ -659,31 +737,31 @@
             label = "AE_LIGATURE";
         };
 
-        i_circ: i_circ {
+        i_circ_lower_windows: i_circ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp I>;
+            bindings = <&kp LEFT_BRACKET &kp I &to 2>;
             label = "I_CIRC";
         };
 
-        i_diaresis: i_diaresis {
+        i_diaresis_lower_windows: i_diaresis {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LEFT_BRACKET) &kp I>;
+            bindings = <&kp LS(LEFT_BRACKET) &kp I &to 2>;
             label = "I_DIARESIS";
         };
 
-        u_circ: u_circ {
+        u_circ_lower_windows: u_circ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp U>;
+            bindings = <&kp LEFT_BRACKET &kp U &to 2>;
             label = "U_CIRC";
         };
 
         o_circ_upper_windows: o_circ_maj {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp LS(O)>;
+            bindings = <&kp LEFT_BRACKET &kp LS(O) &to 2>;
             label = "O_CIRC_MAJ";
         };
 
@@ -701,10 +779,10 @@
             label = "BACK_TICK";
         };
 
-        oe_ligature_windows: oe_ligature_windows {
+        oe_ligature_windows_lower: oe_ligature_windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_N1 &kp KP_N5 &kp KP_N6 &kt LEFT_ALT>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_N1 &kp KP_N5 &kp KP_N6 &kt LEFT_ALT &to 2>;
             label = "OE_LIGATURE_WINDOWS";
         };
 
@@ -715,53 +793,53 @@
             label = "TILDE_WINDOWS";
         };
 
-        ae_ligature_windows: ae_windows_ligature {
+        ae_ligature_windows_lower: ae_ligature_windows_lower {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N0 &kt LEFT_ALT>;
-            label = "AE_WINDOWS_LIGATURE";
+            bindings = <&kt LEFT_ALT &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N0 &kt LEFT_ALT &to 2>;
+            label = "AE_LIGATURE_WINDOWS_LOWER";
         };
 
         a_circ_windows_upper: a_circ_windows_maj {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp LS(Q)>;
+            bindings = <&kp LEFT_BRACKET &kp LS(Q) &to 2>;
             label = "A_CIRC_WINDOWS_MAJ";
         };
 
-        c_cedilla_windows_upper: c_cedilla_maj_windows {
+        c_cedilla_upper_windows: c_cedilla_maj_windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N9 &kt LEFT_ALT>;
+            bindings = <&kt LEFT_ALT &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N9 &kt LEFT_ALT &to 2>;
             label = "C_CEDILLA_MAJ_WINDOWS";
         };
 
-        a_grave_upper: a_grave_upper {
+        a_grave_lower_windows: a_grave_lower_windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(N7) &kp A>;
-            label = "A_GRAVE_UPPER";
+            bindings = <&kp RA(N7) &kp A &to 2>;
+            label = "A_GRAVE_LOWER_WINDOWS";
         };
 
-        e_acute_upper_windows: a_grave_upper_windows {
+        e_acute_upper_windows: e_acute_upper_windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N1 &kt LEFT_ALT &to 1>;
-            label = "A_GRAVE_UPPER_WINDOWS";
+            bindings = <&kt LEFT_ALT &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N1 &kt LEFT_ALT &to 2>;
+            label = "E_ACUTE_UPPER_WINDOWS";
         };
 
-        e_grave_upper: e_grave_upper {
+        e_grave_upper_windows: e_grave_upper_windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(N7) &kp LS(E)>;
-            label = "E_GRAVE_UPPER";
+            bindings = <&kp RA(N7) &kp LS(E) &to 2>;
+            label = "E_GRAVE_UPPER_WINDOWS";
         };
 
-        u_grave_upper: u_grave_upper {
+        u_grave_upper_windows: u_grave_upper_windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(N7) &kp LS(U)>;
-            label = "U_GRAVE_UPPER";
+            bindings = <&kp RA(N7) &kp LS(U) &to 2>;
+            label = "U_GRAVE_UPPER_WINDOWS";
         };
 
         typographical_apo_linux: typographical_apo_linux {
@@ -774,7 +852,7 @@
         typographical_apo_windows: typographical_apo_windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N6 &kt LEFT_ALT>;
+            bindings = <&kt LEFT_ALT &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N6 &kt LEFT_ALT &to 2>;
             label = "TYPOGRAPHICAL_APO_WINDOWS";
         };
 
@@ -861,6 +939,104 @@
             bindings = <&kp LS(LEFT_BRACKET) &kp LS(I) &to 1>;
             label = "I_DIARESIS_UPPER_LINUX";
         };
+
+        underscore_windows: underscore_windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N8 &to 2>;
+            label = "UNDERSCORE_WINDOWS";
+        };
+
+        u_circ_upper_windows: u_circ_upper_windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp LS(U) &to 2>;
+            label = "U_CIRC_UPPER_WINDOWS";
+        };
+
+        u_grave_lower_windows: u_grave_lower_windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(N7) &kp U &to 2>;
+            label = "U_GRAVE_LOWER_WINDOWS";
+        };
+
+        i_diaresis_upper_windows: i_diaresis_upper_windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LEFT_BRACKET) &kp LS(I) &to 2>;
+            label = "I_DIARESIS_UPPER_WINDOWS";
+        };
+
+        i_circ_upper_windows: i_circ_upper_windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp LS(I) &to 2>;
+            label = "I_CIRC_UPPER_WINDOWS";
+        };
+
+        left_parenthesis_windows: left_parenthesis_windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N5 &to 2>;
+            label = "LEFT_PARENTHESIS_WINDOWS";
+        };
+
+        right_parenthesis_windows: right_parenthesis_windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &to 2>;
+            label = "RIGHT_PARENTHESIS_WINDOWS";
+        };
+
+        oe_ligature_upper_windows: oe_ligature_upper_windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_N1 &kp KP_N4 &kp KP_N0 &kt LEFT_ALT &to 2>;
+            label = "OE_LIGATURE_UPPER_WINDOWS";
+        };
+
+        c_cedila_lower_windows: c_cedila_lower_windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp N9 &to 2>;
+            label = "C_CEDILA_LOWER_WINDOWS";
+        };
+
+        a_grave_upper_windows: a_grave_upper_windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(N7) &kp LS(A) &to 2>;
+            label = "A_GRAVE_UPPER_WINDOWS";
+        };
+
+        e_acute_lower_windows: e_acute_lower_windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N2 &to 2>;
+            label = "E_ACUTE_LOWER_WINDOWS";
+        };
+
+        e_grave_lower_windows: e_grave_lower_windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(N7) &to 2>;
+            label = "E_GRAVE_LOWER_WINDOWS";
+        };
+
+        e_circ_upper_windows: e_circ_upper_windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp LS(E) &to 2>;
+            label = "E_CIRC_UPPER_WINDOWS";
+        };
+
+        ae_ligature_upper_windows: ae_ligature_upper_windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N8 &kt LEFT_ALT &to 2>;
+            label = "AE_LIGATURE_UPPER_WINDOWS";
+        };
     };
 
     keymap {
@@ -916,10 +1092,10 @@
         AccentsW {
             label = "Accts win";
             bindings = <
-  &a_circ_windows       &c_cedilla_windows  &oe_ligature_windows  &o_circ_upper_lower_windows  &none             &none   &none                       &kp N8   &to 2        &u_circ
-  &a_grave              &e_acute_windows    &e_grave              &e_circ                      &none             &kp N5  &kp MINUS                   &i_circ  &i_diaresis  &u_grave
-  &ae_ligature_windows  &none               &none                 &none                        &none             &none   &none                       &none    &none        &none
-                                            &none                 &none                        &sk LEFT_SHIFT    &none   &typographical_apo_windows  &none
+  &a_circ_windows       &c_cedilla_windows  &oe_ligature_windows  &o_circ_windows  &to 2             &to 2                             &to 2                             &underscore_windows  &to 2                &u_circ_windows
+  &a_grave_windows      &e_acute_windows    &e_grave_windows      &e_circ_windows  &to 2             &left_parenthesis_windows_nocase  &right_parenthesis_windows_nocas  &i_circ_windows      &i_diaresis_windows  &u_grave_windows
+  &ae_ligature_windows  &to 2               &to 2                 &to 2            &to 2             &to 2                             &to 2                             &to 2                &to 2                &to 2
+                                            &to 2                 &to 2            &kp LEFT_SHIFT    &to 2                             &typographical_apo_windows        &to 2
             >;
         };
 
