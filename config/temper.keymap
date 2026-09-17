@@ -530,7 +530,12 @@
         windows_focus {
             bindings = <&mo 11>;
             key-positions = <31 32>;
-            layers = <2>;
+            layers = <2 1 0>;
+        };
+
+        paste_with_mouse {
+            bindings = <&shift_right_click>;
+            key-positions = <5 6>;
         };
     };
 
@@ -974,6 +979,13 @@
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N8 &kt LEFT_ALT &to 2>;
             label = "AE_LIGATURE_UPPER_WINDOWS";
+        };
+
+        shift_right_click: shift_right_click {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_SHIFT &mkp RCLK &kt LEFT_SHIFT>;
+            label = "SHIFT_RIGHT_CLICK";
         };
     };
 
