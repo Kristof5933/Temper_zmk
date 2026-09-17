@@ -150,41 +150,41 @@ layers:
   - {t: linux, h: toggle}
   Accts win:
   - {t: '&a_circ_windows_lower', s: '&a_circ_windows_upper'}
-  - {t: '9', s: '&c_cedilla_windows_upper'}
-  - '&oe_ligature_windows'
-  - {t: '&o_circ_windows', s: '&o_circ_upper_windows'}
-  - ''
-  - ''
-  - ''
-  - '8'
+  - {t: '&c_cedila_lower_windows', s: '&c_cedilla_upper_windows'}
+  - {t: '&oe_ligature_windows_lower', s: '&oe_ligature_upper_windows'}
+  - {t: '&o_circ_lower_windows', s: '&o_circ_upper_windows'}
+  - {t: windows, h: toggle}
+  - {t: windows, h: toggle}
+  - {t: windows, h: toggle}
+  - '&underscore_windows'
   - {t: windows, h: toggle, type: held}
-  - '&u_circ'
-  - {t: '0', s: '&a_grave_upper'}
-  - {t: '2', s: '&e_acute_upper_windows'}
-  - {t: '7', s: '&e_grave_upper'}
-  - '&e_circ'
-  - ''
-  - '5'
-  - '-'
-  - '&i_circ'
-  - '&i_diaresis'
-  - {t: '''', s: '&u_grave_upper'}
-  - '&ae_ligature_windows'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: Shift, h: sticky}
-  - ''
+  - {t: '&u_circ_lower_windows', s: '&u_circ_upper_windows'}
+  - {t: '&a_grave_lower_windows', s: '&a_grave_upper_windows'}
+  - {t: '&e_acute_lower_windows', s: '&e_acute_upper_windows'}
+  - {t: '&e_grave_lower_windows', s: '&e_grave_upper_windows'}
+  - {t: '&e_circ_lower_windows', s: '&e_circ_upper_windows'}
+  - {t: windows, h: toggle}
+  - {t: '&left_parenthesis_windows', s: '&left_parenthesis_windows'}
+  - {t: '&right_parenthesis_windows', s: '&right_parenthesis_windows'}
+  - {t: '&i_circ_lower_windows', s: '&i_circ_upper_windows'}
+  - {t: '&i_diaresis_lower_windows', s: '&i_diaresis_upper_windows'}
+  - {t: '&u_grave_lower_windows', s: '&u_grave_upper_windows'}
+  - {t: '&ae_ligature_windows_lower', s: '&ae_ligature_upper_windows'}
+  - {t: windows, h: toggle}
+  - {t: windows, h: toggle}
+  - {t: windows, h: toggle}
+  - {t: windows, h: toggle}
+  - {t: windows, h: toggle}
+  - {t: windows, h: toggle}
+  - {t: windows, h: toggle}
+  - {t: windows, h: toggle}
+  - {t: windows, h: toggle}
+  - {t: windows, h: toggle}
+  - {t: windows, h: toggle}
+  - Shift
+  - {t: windows, h: toggle}
   - '&typographical_apo_windows'
-  - ''
+  - {t: windows, h: toggle}
   Nav:
   - Boot
   - ''
