@@ -628,7 +628,7 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key tap layer-activator">
 <tspan x="0" dy="-0.6em">Accts</tspan><tspan x="0" dy="1.2em">win</tspan>
 </text>
-</a><text x="0" y="24" class="key hold">sticky</text>
+</a><text x="0" y="24" class="key hold">toggle</text>
 <text x="0" y="-24" class="key shifted">/</text>
 </g>
 <g transform="translate(700, 49)" class="key keypos-9">
@@ -1054,11 +1054,11 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;underscor…</tspan></text>
 </g>
-<g transform="translate(644, 35)" class="key held keypos-8">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+<g transform="translate(644, 35)" class="key keypos-8">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <a href="#windows">
-<text x="0" y="0" class="key held tap layer-activator">windows</text>
-</a><text x="0" y="24" class="key held hold">toggle</text>
+<text x="0" y="0" class="key tap layer-activator">windows</text>
+</a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(700, 49)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

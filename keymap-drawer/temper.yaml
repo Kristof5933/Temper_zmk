@@ -83,7 +83,7 @@ layers:
   - J
   - ;
   - D
-  - {t: Accts win, h: sticky, s: /}
+  - {t: Accts win, h: toggle, s: /}
   - Y
   - {t: Q, h: Win}
   - {t: S, h: Alt}
@@ -157,7 +157,7 @@ layers:
   - {t: windows, h: toggle}
   - {t: windows, h: toggle}
   - '&underscore_windows'
-  - {t: windows, h: toggle, type: held}
+  - {t: windows, h: toggle}
   - {t: '&u_circ_lower_windows', s: '&u_circ_upper_windows'}
   - {t: '&a_grave_lower_windows', s: '&a_grave_upper_windows'}
   - {t: '&e_acute_lower_windows', s: '&e_acute_upper_windows'}
