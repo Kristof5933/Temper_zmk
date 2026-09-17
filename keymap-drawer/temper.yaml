@@ -531,4 +531,6 @@ combos:
   l: [ergol]
 - p: [31, 32]
   k: Focus
-  l: [windows]
+  l: [windows, linux, ergol]
+- p: [5, 6]
+  k: '&shift_right_click'

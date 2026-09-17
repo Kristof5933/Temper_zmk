@@ -326,6 +326,15 @@ path.combo { stroke: #7f7f7f; }
 <text x="467" y="217" class="combo tap layer-activator">linux</text>
 </a><text x="467" y="228" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="247" y="204" width="28" height="26" class="combo"/>
+<a href="#Focus">
+<text x="261" y="217" class="combo tap layer-activator">Focus</text>
+</a></g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="490" y="26" width="28" height="26" class="combo"/>
+<text x="504" y="38" class="combo tap"><tspan style="font-size: 64%">&amp;shift_rig…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 329)" class="layer-linux">
@@ -545,6 +554,15 @@ path.combo { stroke: #7f7f7f; }
 <text x="467" y="217" class="combo tap layer-activator">windows</text>
 </a><text x="467" y="228" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="247" y="204" width="28" height="26" class="combo"/>
+<a href="#Focus">
+<text x="261" y="217" class="combo tap layer-activator">Focus</text>
+</a></g>
+<g class="combo combopos-9">
+<rect rx="6" ry="6" x="490" y="26" width="28" height="26" class="combo"/>
+<text x="504" y="38" class="combo tap"><tspan style="font-size: 64%">&amp;shift_rig…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 659)" class="layer-windows">
@@ -754,6 +772,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#Focus">
 <text x="261" y="217" class="combo tap layer-activator">Focus</text>
 </a></g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="490" y="26" width="28" height="26" class="combo"/>
+<text x="504" y="38" class="combo tap"><tspan style="font-size: 64%">&amp;shift_rig…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 988)" class="layer-Accts lnx">
@@ -961,6 +983,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#Mouse">
 <text x="364" y="98" class="combo tap layer-activator">Mouse</text>
 </a><text x="364" y="109" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="490" y="26" width="28" height="26" class="combo"/>
+<text x="504" y="38" class="combo tap"><tspan style="font-size: 64%">&amp;shift_rig…</tspan></text>
 </g>
 </g>
 </g>
@@ -1170,6 +1196,10 @@ path.combo { stroke: #7f7f7f; }
 <text x="364" y="98" class="combo tap layer-activator">Mouse</text>
 </a><text x="364" y="109" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="490" y="26" width="28" height="26" class="combo"/>
+<text x="504" y="38" class="combo tap"><tspan style="font-size: 64%">&amp;shift_rig…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1646)" class="layer-Nav">
@@ -1330,6 +1360,10 @@ path.combo { stroke: #7f7f7f; }
 <text x="364" y="98" class="combo tap layer-activator">Mouse</text>
 </a><text x="364" y="109" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="490" y="26" width="28" height="26" class="combo"/>
+<text x="504" y="38" class="combo tap"><tspan style="font-size: 64%">&amp;shift_rig…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1976)" class="layer-AltGr l">
@@ -1480,6 +1514,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#Mouse">
 <text x="364" y="98" class="combo tap layer-activator">Mouse</text>
 </a><text x="364" y="109" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="490" y="26" width="28" height="26" class="combo"/>
+<text x="504" y="38" class="combo tap"><tspan style="font-size: 64%">&amp;shift_rig…</tspan></text>
 </g>
 </g>
 </g>
@@ -1632,6 +1670,10 @@ path.combo { stroke: #7f7f7f; }
 <text x="364" y="98" class="combo tap layer-activator">Mouse</text>
 </a><text x="364" y="109" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="490" y="26" width="28" height="26" class="combo"/>
+<text x="504" y="38" class="combo tap"><tspan style="font-size: 64%">&amp;shift_rig…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 2634)" class="layer-Num">
@@ -1774,6 +1816,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#Mouse">
 <text x="364" y="98" class="combo tap layer-activator">Mouse</text>
 </a><text x="364" y="109" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="490" y="26" width="28" height="26" class="combo"/>
+<text x="504" y="38" class="combo tap"><tspan style="font-size: 64%">&amp;shift_rig…</tspan></text>
 </g>
 </g>
 </g>
@@ -1923,6 +1969,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#Mouse">
 <text x="364" y="98" class="combo tap layer-activator">Mouse</text>
 </a><text x="364" y="109" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="490" y="26" width="28" height="26" class="combo"/>
+<text x="504" y="38" class="combo tap"><tspan style="font-size: 64%">&amp;shift_rig…</tspan></text>
 </g>
 </g>
 </g>
@@ -2079,6 +2129,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#Mouse">
 <text x="364" y="98" class="combo tap layer-activator">Mouse</text>
 </a><text x="364" y="109" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="490" y="26" width="28" height="26" class="combo"/>
+<text x="504" y="38" class="combo tap"><tspan style="font-size: 64%">&amp;shift_rig…</tspan></text>
 </g>
 </g>
 </g>
@@ -2271,6 +2325,10 @@ path.combo { stroke: #7f7f7f; }
 <text x="364" y="98" class="combo tap layer-activator">Mouse</text>
 </a><text x="364" y="109" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="490" y="26" width="28" height="26" class="combo"/>
+<text x="504" y="38" class="combo tap"><tspan style="font-size: 64%">&amp;shift_rig…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 3951)" class="layer-Mouse">
@@ -2436,6 +2494,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#Mouse">
 <text x="364" y="98" class="combo tap layer-activator">Mouse</text>
 </a><text x="364" y="109" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="490" y="26" width="28" height="26" class="combo"/>
+<text x="504" y="38" class="combo tap"><tspan style="font-size: 64%">&amp;shift_rig…</tspan></text>
 </g>
 </g>
 </g>
