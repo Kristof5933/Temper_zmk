@@ -213,7 +213,7 @@ layers:
   - Paste
   - Scroll ↓
   - End
-  - ''
+  - ↓
   - PAGE DOWN
   - CAPSLOCK
   - ''
@@ -439,8 +439,8 @@ layers:
   - Gui+3
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -450,50 +450,44 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - Scroll ↑
-  - Mouse ←
+  - Left Click
   - Mouse ↑
-  - Mouse ↓
+  - Right Click
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - Mouse ←
+  - ''
   - Mouse →
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Scroll ↓
+  - ''
+  - Mouse ↓
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Left Click
-  - Middle Click
-  - Right Click
+  - ''
+  - ''
+  - ''
 combos:
-- p: [10, 19]
-  k: CAPSLOCK
-  l: [linux]
 - p: [10, 11, 12]
   k: Alt+↹
-  l: [linux]
-- p: [0, 10]
-  k: '~'
-  l: [linux]
+  l: [linux, windows, ergol]
 - p: [21, 22]
   k: Cut
-  l: [linux]
+  l: [linux, ergol, windows]
 - p: [22, 23]
   k: Copy
   l: [linux]
@@ -501,25 +495,11 @@ combos:
   k: Paste
   l: [linux]
 - p: [9, 8]
-  k: Snip Img
-  l: [linux]
-- p: [27, 28]
-  k: ;
-  l: [linux]
-- p: [18, 19]
-  k: '-'
-  l: [linux]
+  k: Ctl+Print Screen
+  l: [linux, ergol, windows]
 - p: [0, 4, 32]
   k: Boot
   l: [linux]
-- p: [0, 1, 2]
-  k: Win Close
-  l: [linux]
-- p: [0, 1]
-  k: ESCAPE
-  l: [linux]
-- p: [32, 33]
-  k: Media
 - p: [16, 17]
   k: Gui+←
   l: [Focus]
@@ -538,17 +518,6 @@ combos:
 - p: [19, 18, 17]
   k: Gui+Sft+→
   l: [Focus]
-- p: [16, 17, 18]
-  k: '='
-  l: [Num]
-- p: [16, 17]
-  k: (
-  l: [Num]
-- p: [18, 19]
-  k: )
-  l: [Num]
-- p: [20, 23]
-  k: ⌦
 - p: [14, 15]
   k: {t: Mouse, h: toggle}
 - p: [33, 34]
@@ -560,3 +529,6 @@ combos:
 - p: [33, 34]
   k: {t: linux, h: toggle}
   l: [ergol]
+- p: [31, 32]
+  k: Focus
+  l: [windows]
