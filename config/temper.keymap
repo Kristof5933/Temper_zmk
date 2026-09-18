@@ -1002,7 +1002,7 @@
         tmux_vsplit: tmux_vsplit {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp AT>;
+            bindings = <&kp LC(B) &kp SQT>;
             label = "TMUX_VSPLIT";
         };
 
@@ -1016,14 +1016,14 @@
         tmux_pane_left: tmux_pane_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp LEFT>;
+            bindings = <&kp LC(B) &kp LEFT_ARROW>;
             label = "TMUX_PANE_LEFT";
         };
 
         tmux_pane_right: tmux_pane_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp RIGHT>;
+            bindings = <&kp LC(B) &kp RIGHT_ARROW>;
             label = "TMUX_PANE_RIGHT";
         };
 
@@ -1037,14 +1037,14 @@
         tmux_pane_down: tmux_pane_down {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp DOWN>;
+            bindings = <&kp LC(B) &kp DOWN_ARROW>;
             label = "TMUX_PANE_DOWN";
         };
 
         tmux_pane_zoom: tmux_pane_zoom {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp Z>;
+            bindings = <&kp LC(B) &kp W>;
             label = "TMUX_PANE_ZOOM";
         };
 
@@ -1143,7 +1143,7 @@
 
         AltGrL {
             bindings = <
-  &circ             &kp NON_US_BACKSLASH  &kp LS(NON_US_BACKSLASH)  &kp RIGHT_BRACKET  &kp LS(APOS)        &kp RA(N0)        &kp NUMBER_1  &kp KP_MULTIPLY  &kp NUMBER_4    &back_tick
+  &circ             &kp NON_US_BACKSLASH  &kp LS(NON_US_BACKSLASH)  &kp RIGHT_BRACKET  &kp LS(APOS)        &kp RA(N0)        &kp NUMBER_1  &kp NON_US_HASH  &kp NUMBER_4    &back_tick
   &kp RA(NUMBER_4)  &kp N5                &kp MINUS                 &kp RA(EQUAL)      &kp EQUAL           &kp RA(N8)        &kp KP_PLUS   &kp NUMBER_6     &kp LS(PERIOD)  &kp NUMBER_3
   &kp RA(NUMBER_2)  &kp RA(N5)            &kp RA(MINUS)             &kp N8             &kp RA(NUMBER_3)    &kp RA(NUMBER_6)  &kp SLASH     &kp COMMA        &kp DOT         &kp LS(M)
                                           &none                     &none              &none               &none             &none         &none
@@ -1155,7 +1155,7 @@
         AltGrW {
             label = "AltGr w";
             bindings = <
-  &circ             &kp NON_US_BACKSLASH  &kp LS(NON_US_BACKSLASH)  &kp RIGHT_BRACKET  &kp LS(APOS)        &kp RA(N0)        &kp NUMBER_1  &kp KP_MULTIPLY  &kp NUMBER_4  &back_tick
+  &circ             &kp NON_US_BACKSLASH  &kp LS(NON_US_BACKSLASH)  &kp RIGHT_BRACKET  &kp LS(APOS)        &kp RA(N0)        &kp NUMBER_1  &kp NON_US_HASH  &kp NUMBER_4  &back_tick
   &kp RA(NUMBER_4)  &kp N5                &kp MINUS                 &kp RA(EQUAL)      &kp EQUAL           &kp RA(N8)        &kp KP_PLUS   &kp NUMBER_6     &kp LS(DOT)   &kp NUMBER_3
   &tilde_windows    &kp RA(N5)            &kp RA(MINUS)             &kp N8             &kp RA(NUMBER_3)    &kp RA(NUMBER_6)  &kp SLASH     &kp COMMA        &kp DOT       &kp LS(M)
                                           &none                     &none              &none               &none             &none         &none
