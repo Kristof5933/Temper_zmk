@@ -32,7 +32,7 @@ layers:
   - .
   - /
   - {t: ESCAPE, h: Media}
-  - {t: ⌫, h: Num}
+  - {t: ␣, h: Num}
   - {t: ↹, h: Shift}
   - {t: ⏎, h: AltGr}
   - {t: ␣, h: Nav}
@@ -69,7 +69,7 @@ layers:
   - {t: M, s: ','}
   - K
   - {t: ESCAPE, h: Media}
-  - {t: ⌫, h: Num}
+  - {t: ␣, h: Num}
   - {t: ↹, h: Shift}
   - {t: ⏎, h: AltGr l}
   - {t: ␣, h: Nav}
@@ -106,7 +106,7 @@ layers:
   - {t: M, s: ','}
   - K
   - {t: ESCAPE, h: Media}
-  - {t: ⌫, h: Num}
+  - {t: ␣, h: Num}
   - {t: ↹, h: Shift}
   - {t: ⏎, h: AltGr w}
   - {t: ␣, h: Nav}
@@ -306,7 +306,7 @@ layers:
   - Sft+7
   - Sft+8
   - Sft+9
-  - Boot
+  - AltGr+E
   - ''
   - ''
   - ''
@@ -326,7 +326,7 @@ layers:
   - Sft+1
   - Sft+2
   - Sft+3
-  - ','
+  - Sft+,
   - ''
   - {type: held}
   - ''
@@ -444,47 +444,46 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Mouse:
+  Mouse: ['', '', '', '', '', Scroll ↑, Left Click, Mouse ↑, Right Click, '', '', '', '', '', '', '', Mouse ←, '', Mouse →, '', '', '', '', '', '', Scroll ↓, '',
+    Mouse ↓, '', '', '', '', '', '', '', '']
+  Tmux:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Scroll ↑
-  - Left Click
-  - Mouse ↑
-  - Right Click
+  - '&tmux_new_pane'
+  - '&tmux_prev_window'
+  - '&tmux_pane_up'
+  - '&tmux_next_window'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
-  - Mouse ←
-  - ''
-  - Mouse →
-  - ''
+  - '&tmux_hsplit'
+  - '&tmux_pane_left'
+  - '&tmux_pane_zoom'
+  - '&tmux_pane_right'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Scroll ↓
-  - ''
-  - Mouse ↓
+  - {t: ▽, type: trans}
+  - '&tmux_vsplit'
+  - {t: ▽, type: trans}
+  - '&tmux_pane_down'
+  - {t: ▽, type: trans}
+  - '&tmux_pane_close'
+  - {type: held}
+  - {type: held}
+  - LEFT CONTROL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
 combos:
-- p: [10, 11, 12]
-  k: Alt+↹
-  l: [linux, windows, ergol]
 - p: [21, 22]
   k: Cut
   l: [linux, ergol, windows]
@@ -534,3 +533,8 @@ combos:
   l: [windows, linux, ergol]
 - p: [5, 6]
   k: '&shift_right_click'
+- p: [6, 7]
+  k: ⌫
+  l: [ergol, windows, linux]
+- p: [30, 31]
+  k: Tmux
