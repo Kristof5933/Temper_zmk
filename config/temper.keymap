@@ -1002,7 +1002,7 @@
         tmux_vsplit: tmux_vsplit {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp SQT>;
+            bindings = <&kp LC(B) &kp APOSTROPHE>;
             label = "TMUX_VSPLIT";
         };
 
