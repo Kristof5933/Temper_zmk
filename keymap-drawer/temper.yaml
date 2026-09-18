@@ -480,7 +480,7 @@ layers:
   - {type: held}
   - {type: held}
   - LEFT CONTROL
-  - {t: ▽, type: trans}
+  - '&tmux_enter_nav'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Tmux_nav:
