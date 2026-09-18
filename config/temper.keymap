@@ -1002,7 +1002,7 @@
         tmux_vsplit: tmux_vsplit {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp APOSTROPHE>;
+            bindings = <&kp LC(B) &kp LS(APOSTROPHE)>;
             label = "TMUX_VSPLIT";
         };
 
@@ -1067,6 +1067,20 @@
             #binding-cells = <0>;
             bindings = <&kp LC(B) &kp P>;
             label = "TMUX_PREV_WINDOW";
+        };
+
+        tmux_enter_nav: tmux_enter_nav {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp RA(N5) &tog 5>;
+            label = "TMUX_ENTER_NAV";
+        };
+
+        tmux_quit_nav: tmux_quit_nav {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &tog 5>;
+            label = "TMUX_QUIT_NAV";
         };
     };
 
@@ -1165,7 +1179,7 @@
         Num {
             bindings = <
   &bootloader  &none  &none  &none  &studio_unlock    &kp KP_MULTIPLY      &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &kp RA(E)
-  &none        &none  &none  &none  &none             &kp KP_DIVIDE        &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LS(COMMA)
+  &none        &none  &none  &none  &none             &kp KP_DIVIDE        &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp M
   &none        &none  &none  &none  &none             &kp LS(KP_SUBTRACT)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(COMMA)
                       &none  &none  &none             &kp KP_PLUS          &kp LS(N0)        &kp EQUAL
             >;
@@ -1225,6 +1239,26 @@
             >;
 
             label = "Tmux";
+        };
+
+        tmux_nav {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans    &trans          &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans          &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans          &trans  &trans  &trans  &trans
+                  &trans  &trans  &trans    &tmux_quit_nav  &trans  &trans
+            >;
+
+            label = "Tmux_nav";
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        tmux_nav_cond {
+            if-layers = <13 5>;
+            then-layer = <14>;
         };
     };
 };
