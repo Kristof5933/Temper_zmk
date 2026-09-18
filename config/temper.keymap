@@ -1232,10 +1232,10 @@
 
         Tmux {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans              &tmux_new_pane  &tmux_prev_window  &tmux_pane_up    &tmux_next_window  &trans
-  &trans  &trans  &trans  &trans  &trans              &tmux_hsplit    &tmux_pane_left    &tmux_pane_zoom  &tmux_pane_right   &trans
-  &trans  &trans  &trans  &trans  &trans              &tmux_vsplit    &trans             &tmux_pane_down  &trans             &tmux_pane_close
-                  &trans  &trans  &kp LEFT_CONTROL    &trans          &trans             &trans
+  &trans  &trans  &trans  &trans  &trans              &tmux_new_pane   &tmux_prev_window  &tmux_pane_up    &tmux_next_window  &trans
+  &trans  &trans  &trans  &trans  &trans              &tmux_hsplit     &tmux_pane_left    &tmux_pane_zoom  &tmux_pane_right   &trans
+  &trans  &trans  &trans  &trans  &trans              &tmux_vsplit     &trans             &tmux_pane_down  &trans             &tmux_pane_close
+                  &trans  &trans  &kp LEFT_CONTROL    &tmux_enter_nav  &trans             &trans
             >;
 
             label = "Tmux";
