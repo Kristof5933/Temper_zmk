@@ -32,10 +32,10 @@ layers:
   - .
   - /
   - {t: ESCAPE, h: Media}
-  - {t: ␣, h: Num}
-  - {t: ↹, h: Shift}
-  - {t: ⏎, h: AltGr}
-  - {t: ␣, h: Nav}
+  - {t: ↹, h: Num}
+  - {t: ␣, h: Shift}
+  - {t: ␣, h: AltGr}
+  - {t: AltGr, h: Nav}
   - {t: ⌦, h: AltGr l}
   linux:
   - A
@@ -69,10 +69,10 @@ layers:
   - {t: M, s: ','}
   - K
   - {t: ESCAPE, h: Media}
-  - {t: ␣, h: Num}
-  - {t: ↹, h: Shift}
-  - {t: ⏎, h: AltGr l}
-  - {t: ␣, h: Nav}
+  - {t: ↹, h: Num}
+  - {t: ␣, h: Shift}
+  - {t: ␣, h: AltGr l}
+  - {t: RETURN, h: Nav}
   - {t: ⌦, h: Funct}
   windows:
   - A
@@ -106,10 +106,10 @@ layers:
   - {t: M, s: ','}
   - K
   - {t: ESCAPE, h: Media}
-  - {t: ␣, h: Num}
-  - {t: ↹, h: Shift}
-  - {t: ⏎, h: AltGr w}
-  - {t: ␣, h: Nav}
+  - {t: ↹, h: Num}
+  - {t: ␣, h: Shift}
+  - {t: ␣, h: AltGr w}
+  - {t: RETURN, h: Nav}
   - {t: ⌦, h: Funct}
   Accts lnx:
   - {t: '&a_circ_linux_lower', s: '&a_circ_linux_upper'}
@@ -556,13 +556,13 @@ combos:
   l: [Focus]
 - p: [14, 15]
   k: {t: Mouse, h: toggle}
-- p: [33, 34]
+- p: [34, 35]
   k: {t: windows, h: toggle}
   l: [linux]
-- p: [33, 34]
+- p: [34, 35]
   k: {t: ergol, h: toggle}
   l: [windows]
-- p: [33, 34]
+- p: [34, 35]
   k: {t: linux, h: toggle}
   l: [ergol]
 - p: [31, 32]
