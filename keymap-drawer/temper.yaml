@@ -322,7 +322,7 @@ layers:
   - ''
   - ''
   - ''
-  - Sft+KP SUBTRACT
+  - KP SUBTRACT
   - Sft+1
   - Sft+2
   - Sft+3
@@ -447,42 +447,42 @@ layers:
   Mouse: ['', '', '', '', '', Scroll ↑, Left Click, Mouse ↑, Right Click, '', '', '', '', '', '', '', Mouse ←, '', Mouse →, '', '', '', '', '', '', Scroll ↓, '',
     Mouse ↓, '', '', '', '', '', '', '', '']
   Tmux:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - '&tmux_new_pane'
   - '&tmux_prev_window'
   - '&tmux_pane_up'
   - '&tmux_next_window'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - '&tmux_hsplit'
   - '&tmux_pane_left'
   - '&tmux_pane_zoom'
   - '&tmux_pane_right'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - '&tmux_vsplit'
-  - {t: ▽, type: trans}
+  - ''
   - '&tmux_pane_down'
-  - {t: ▽, type: trans}
+  - ''
   - '&tmux_pane_close'
   - {type: held}
   - {type: held}
   - LEFT CONTROL
   - '&tmux_enter_nav'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   Tmux_nav:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -520,6 +520,43 @@ layers:
   - '&tmux_quit_nav'
   - {type: held}
   - {t: ▽, type: trans}
+  vi:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&vi_new_tab'
+  - '&vi_prev_tab'
+  - '&vi_pane_up'
+  - '&vi_next_tab'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&vi_hsplit'
+  - '&vi_pane_right'
+  - ''
+  - '&vi_pane_right'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&vi_vsplit'
+  - ''
+  - '&vi_pane_down'
+  - ''
+  - '&vi_pane_close'
+  - {type: held}
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
 combos:
 - p: [21, 22]
   k: Cut
@@ -575,3 +612,6 @@ combos:
   l: [ergol, windows, linux]
 - p: [30, 31]
   k: Tmux
+- p: [30, 32]
+  k: vi
+  l: [ergol, windows, linux]
