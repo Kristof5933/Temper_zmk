@@ -541,6 +541,12 @@
             bindings = <&mo 13>;
             key-positions = <30 31>;
         };
+
+        vi_layer {
+            bindings = <&mo 15>;
+            key-positions = <30 32>;
+            layers = <0 2 1>;
+        };
     };
 
     macros {
@@ -1082,6 +1088,76 @@
             bindings = <&kp ESCAPE &tog 5>;
             label = "TMUX_QUIT_NAV";
         };
+
+        vi_new_tab: vi_new_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PERIOD &kp T &kp Q &kp B &kp N &kp E &kp Z &kp ENTER>;
+            label = "VI_NEW_TAB";
+        };
+
+        vi_vsplit: vi_vsplit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PERIOD &kp V &kp S &kp P &kp L &kp I &kp T &kp RET>;
+            label = "VI_VSPLIT";
+        };
+
+        vi_hsplit: vi_hsplit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PERIOD &kp S &kp P &kp L &kp I &kp T &kp RET>;
+            label = "VI_HSPLIT";
+        };
+
+        vi_pane_left: vi_pane_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(Z) &kp LEFT_ARROW>;
+            label = "VI_PANE_LEFT";
+        };
+
+        vi_pane_right: vi_pane_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(Z) &kp RIGHT_ARROW>;
+            label = "VI_PANE_RIGHT";
+        };
+
+        vi_pane_up: vi_pane_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(Z) &kp UP_ARROW>;
+            label = "VI_PANE_UP";
+        };
+
+        vi_pane_down: vi_pane_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(Z) &kp DOWN_ARROW>;
+            label = "VI_PANE_DOWN";
+        };
+
+        vi_pane_close: vi_pane_close {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PERIOD &kp Q &kp ENTER>;
+            label = "VI_PANE_CLOSE";
+        };
+
+        vi_next_tab: vi_next_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp T>;
+            label = "VI_NEXT_TAB";
+        };
+
+        vi_prev_tab: vi_prev_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp LS(T)>;
+            label = "VI_PREV_TAB";
+        };
     };
 
     keymap {
@@ -1178,10 +1254,10 @@
 
         Num {
             bindings = <
-  &bootloader  &none  &none  &none  &studio_unlock    &kp KP_MULTIPLY      &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &kp RA(E)
-  &none        &none  &none  &none  &none             &kp KP_DIVIDE        &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp M
-  &none        &none  &none  &none  &none             &kp LS(KP_SUBTRACT)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(COMMA)
-                      &none  &none  &none             &kp KP_PLUS          &kp LS(N0)        &kp EQUAL
+  &bootloader  &none  &none  &none  &studio_unlock    &kp KP_MULTIPLY  &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &kp RA(E)
+  &none        &none  &none  &none  &none             &kp KP_DIVIDE    &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp M
+  &none        &none  &none  &none  &none             &kp KP_SUBTRACT  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(COMMA)
+                      &none  &none  &none             &kp KP_PLUS      &kp LS(N0)        &kp EQUAL
             >;
 
             label = "Num";
@@ -1232,10 +1308,10 @@
 
         Tmux {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans              &tmux_new_pane   &tmux_prev_window  &tmux_pane_up    &tmux_next_window  &trans
-  &trans  &trans  &trans  &trans  &trans              &tmux_hsplit     &tmux_pane_left    &tmux_pane_zoom  &tmux_pane_right   &trans
-  &trans  &trans  &trans  &trans  &trans              &tmux_vsplit     &trans             &tmux_pane_down  &trans             &tmux_pane_close
-                  &trans  &trans  &kp LEFT_CONTROL    &tmux_enter_nav  &trans             &trans
+  &none  &none  &none  &none  &none               &tmux_new_pane   &tmux_prev_window  &tmux_pane_up    &tmux_next_window  &none
+  &none  &none  &none  &none  &none               &tmux_hsplit     &tmux_pane_left    &tmux_pane_zoom  &tmux_pane_right   &none
+  &none  &none  &none  &none  &none               &tmux_vsplit     &none              &tmux_pane_down  &none              &tmux_pane_close
+                &none  &none  &kp LEFT_CONTROL    &tmux_enter_nav  &none              &none
             >;
 
             label = "Tmux";
@@ -1250,6 +1326,16 @@
             >;
 
             label = "Tmux_nav";
+        };
+
+        vi {
+            label = "vi";
+            bindings = <
+  &none  &none  &none  &none  &none    &vi_new_tab  &vi_prev_tab    &vi_pane_up    &vi_next_tab    &none
+  &none  &none  &none  &none  &none    &vi_hsplit   &vi_pane_right  &none          &vi_pane_right  &none
+  &none  &none  &none  &none  &none    &vi_vsplit   &none           &vi_pane_down  &none           &vi_pane_close
+                &none  &none  &none    &none        &none           &none
+            >;
         };
     };
 
