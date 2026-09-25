@@ -1166,10 +1166,10 @@
         ergol {
             label = "ergol";
             bindings = <
-  &kp Q            &kp W           &kp E               &kp R      &kp T                   &kp Y                &kp U            &kp I                &kp O            &kp P
-  &hml LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &kp F      &kp G                   &kp H                &kp J            &hm RIGHT_CONTROL K  &hm RIGHT_ALT L  &hmr RIGHT_GUI SEMICOLON
-  &kp Z            &kp X           &kp C               &kp V      &kp B                   &kp N                &kp M            &kp COMMA            &kp PERIOD       &kp SLASH
-                                   &lt 9 ESCAPE        &lt 8 TAB  &hm LEFT_SHIFT SPACE    &mt RIGHT_ALT SPACE  &lt 5 RIGHT_ALT  &lt 6 DEL
+  &kp Q            &kp W           &kp E               &kp R      &kp T                   &kp Y                &kp U        &kp I                &kp O            &kp P
+  &hml LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &kp F      &kp G                   &kp H                &kp J        &hm RIGHT_CONTROL K  &hm RIGHT_ALT L  &hmr RIGHT_GUI SEMICOLON
+  &kp Z            &kp X           &kp C               &kp V      &kp B                   &kp N                &kp M        &kp COMMA            &kp PERIOD       &kp SLASH
+                                   &lt 9 ESCAPE        &lt 8 TAB  &hm LEFT_SHIFT SPACE    &mt RIGHT_ALT SPACE  &lt 5 ENTER  &lt 6 DEL
             >;
         };
 
