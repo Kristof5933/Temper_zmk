@@ -1331,10 +1331,10 @@
         vi {
             label = "vi";
             bindings = <
-  &none  &none  &none  &none  &none    &vi_new_tab  &vi_prev_tab    &vi_pane_up    &vi_next_tab    &none
-  &none  &none  &none  &none  &none    &vi_hsplit   &vi_pane_right  &none          &vi_pane_right  &none
-  &none  &none  &none  &none  &none    &vi_vsplit   &none           &vi_pane_down  &none           &vi_pane_close
-                &none  &none  &none    &none        &none           &none
+  &none  &none  &none  &none  &none    &vi_new_tab  &vi_prev_tab   &vi_pane_up    &vi_next_tab    &none
+  &none  &none  &none  &none  &none    &vi_hsplit   &vi_pane_left  &none          &vi_pane_right  &none
+  &none  &none  &none  &none  &none    &vi_vsplit   &none          &vi_pane_down  &none           &vi_pane_close
+                &none  &none  &none    &none        &none          &none
             >;
         };
     };
