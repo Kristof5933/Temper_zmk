@@ -35,7 +35,7 @@ layers:
   - {t: ↹, h: Num}
   - {t: ␣, h: Shift}
   - {t: ␣, h: AltGr}
-  - {t: AltGr, h: Nav}
+  - {t: ⏎, h: Nav}
   - {t: ⌦, h: AltGr l}
   linux:
   - A
