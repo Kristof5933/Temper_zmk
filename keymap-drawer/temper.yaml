@@ -537,7 +537,7 @@ layers:
   - ''
   - ''
   - '&vi_hsplit'
-  - '&vi_pane_right'
+  - '&vi_pane_left'
   - ''
   - '&vi_pane_right'
   - ''
