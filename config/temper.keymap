@@ -1141,7 +1141,7 @@
         vi_pane_close: vi_pane_close {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp PERIOD &kp Q &kp ENTER>;
+            bindings = <&kp PERIOD &kp A &kp ENTER>;
             label = "VI_PANE_CLOSE";
         };
 
